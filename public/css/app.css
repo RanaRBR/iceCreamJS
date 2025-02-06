@@ -12027,6 +12027,7 @@ ul a {
   width: 350px;
   padding: 2%;
   border: 1px solid #ffbedd;
+  padding: -8%;
 }
 
 .read {
@@ -12055,7 +12056,7 @@ ul a {
 .texteCar {
   height: 250px;
   width: 600px;
-  background-color: #472020;
+  background-color: #a39090;
   box-shadow: 10 14px 20px rgba(0, 0, 0, 0.5);
   margin-top: 10%;
   padding-top: 15%;
@@ -12113,6 +12114,49 @@ img {
 #next {
   right: -30px;
   padding: 5px;
+}
+
+.send {
+  background-color: #f588b6;
+  width: 180px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 5%;
+}
+
+footer {
+  background-color: #212121;
+}
+
+.container {
+  max-width: 120px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+textarea {
+  width: 200px;
+  height: 60px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#subscribeBtn {
+  background-color: #f588b6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#subscribeBtn:hover {
+  background-color: white;
+  color: #ffbedd;
 }
 
 /*# sourceMappingURL=app.css.map */

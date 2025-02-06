@@ -11917,4 +11917,51 @@ ul a {
   margin-left: 4%;
 }
 
+.bordure2 {
+  background-color: #ffbedd;
+  width: 80px;
+  height: 5px;
+  border-radius: 15px;
+  margin-left: 30%;
+}
+
+.premierePhoto {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 20%;
+}
+.premierePhoto img {
+  padding: 25%;
+  background-color: #c6c6c4;
+}
+.premierePhoto span {
+  background-color: #e6e6f0;
+  border-radius: 50%;
+  height: 80px !important;
+  width: 80px !important;
+  padding: 5%;
+}
+
+.add {
+  border: 1px solid #f588b6;
+  color: #f588b6;
+  background-color: white;
+  width: 180px;
+  height: 40px;
+  border-radius: 25px;
+}
+
+.boiteP {
+  height: 150px;
+  width: 365px;
+  background-color: #fbfbff;
+}
+
+.glace1 {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
 /*# sourceMappingURL=app.css.map */

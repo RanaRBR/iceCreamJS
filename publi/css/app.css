@@ -11935,19 +11935,19 @@ ul a {
   width: 50%;
   margin-top: 5%;
   margin-bottom: 20%;
+  background-color: #c6c6c4 !important;
 }
 
 .gris {
   background-color: #f8f9fa;
-  height: 60% !important;
-  width: 100% !important;
   padding: 20px;
   margin: 15px;
 }
 
 .gris img {
-  width: 100%;
+  max-width: 80%;
   height: auto;
+  mix-blend-mode: multiply;
 }
 
 .boiteP span {
@@ -11971,8 +11971,8 @@ ul a {
   height: 150px;
   width: 365px;
   background-color: #fbfbff;
-  margin-right: 40%;
-  padding-right: 20px;
+  margin-top: 20%;
+  margin-right: -20%;
 }
 
 .glace1 {

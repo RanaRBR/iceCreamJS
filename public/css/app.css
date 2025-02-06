@@ -11918,7 +11918,7 @@ ul a {
 }
 
 .titre {
-  margin-left: 5%;
+  margin-left: 15%;
   margin-top: 5%;
 }
 
@@ -12000,6 +12000,41 @@ ul a {
   width: 180px;
   height: 40px;
   border-radius: 25px;
+}
+
+.see {
+  background-color: #f588b6;
+  width: 180px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-left: 45%;
+  margin-bottom: 5%;
+}
+
+.services {
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+.carre1 {
+  height: 180px;
+  width: 350px;
+  padding: 2%;
+  border: 1px solid #ffbedd;
+}
+
+.read {
+  background-color: #f588b6;
+  width: 180px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-left: 45%;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 /*# sourceMappingURL=app.css.map */

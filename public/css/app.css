@@ -12027,16 +12027,19 @@ ul a {
   grid-template-columns: repeat(3, 1fr);
   margin-left: 14.7%;
   margin-top: 10% !important;
+  overflow: hidden;
+  padding-bottom: -15% !important;
+  padding-top: 5%;
 }
 
 .carre1 {
-  height: 180px;
+  height: 200px;
   width: 350px;
   border: 2px solid #ffbedd !important;
-  padding: 10px;
-  display: grid;
-  flex-direction: column;
-  justify-content: space-between;
+  padding: 5%;
+  overflow: hidden;
+  padding-bottom: -15% !important;
+  padding-top: 5%;
 }
 
 .read {
@@ -12067,15 +12070,17 @@ ul a {
   position: relative;
   max-width: 600px;
   margin: auto;
+  padding: 10px;
 }
 
 .texteCar {
   height: 250px;
   width: 700px;
-  background-color: #a39090;
+  background-color: #fffefe;
   margin-top: 10%;
   padding-top: 15%;
   padding: 10%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
 }
 
 .slides {
@@ -12123,12 +12128,12 @@ img {
 }
 
 #previous {
-  left: -20px;
+  left: -15px;
   padding: 5px;
 }
 
 #next {
-  right: -120px;
+  right: -135px;
   padding: 5px;
 }
 

@@ -12163,8 +12163,10 @@ footer {
   gap: 1rem;
 }
 
-.gauche h4, .gauche .h4 {
-  margin-bottom: 1rem;
+.bordureF {
+  background-color: white;
+  width: 160px;
+  height: 2px;
 }
 
 .gauche .send {
@@ -12176,9 +12178,7 @@ footer {
   align-self: flex-start;
   background-color: #f588b6;
   border: none;
-  border-radius: 5px;
   color: white;
-  margin-left: 45%;
   margin-bottom: 5%;
 }
 
@@ -12198,26 +12198,44 @@ footer {
   align-items: center;
 }
 
-.newsletter-reseaux {
+.newsletter {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
-.newsletter textarea {
-  width: 100%;
+.newsletter p {
+  margin: 0;
+}
+
+.input-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.input-group textarea {
+  flex: 1;
   padding: 0.5rem;
-  margin-bottom: 1rem;
   resize: none;
+  min-height: 40px !important;
 }
 
-.newsletter #subscribeBtn {
+.input-group #subscribeBtn {
   background-color: #f588b6;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
-  width: 100%;
+}
+
+.droite i {
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.droite i:hover {
+  color: #ffbedd;
 }
 
 .reseaux {
@@ -12228,7 +12246,7 @@ footer {
 
 .reseaux i {
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: color 0.5s ease;
 }
 
 .reseaux i:hover {

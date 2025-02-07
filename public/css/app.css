@@ -11969,9 +11969,6 @@ ul a {
   background-color: #f0f0f4;
   padding-left: 10%;
 }
-.gris img {
-  padding: 10%;
-}
 
 .texte {
   display: block !important;
@@ -12039,6 +12036,14 @@ ul a {
   padding-bottom: -15% !important;
   padding-top: 5%;
 }
+.carre1 p {
+  margin-top: 20%;
+}
+
+.title {
+  margin-top: 2%;
+  margin-bottom: -15%;
+}
 
 .read {
   background-color: #f588b6;
@@ -12050,14 +12055,6 @@ ul a {
   margin-left: 45%;
   margin-bottom: 5%;
   margin-top: 5%;
-}
-
-.title {
-  margin-top: 2%;
-  margin-bottom: -15%;
-}
-.title img {
-  margin-top: 25%;
 }
 
 .temoinT {
@@ -12097,18 +12094,13 @@ ul a {
   display: block;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.slide img {
+  width: 200px;
+  height: 200px;
   margin-top: 20px;
   position: relative;
   bottom: 80px;
   left: 25px;
-}
-
-.slide img {
-  width: 200px;
-  height: 200px;
   object-fit: cover;
 }
 

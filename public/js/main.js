@@ -1,3 +1,6 @@
+//CAROUSSEL
+
+
 document.addEventListener('DOMContentLoaded', function () {
     let slides = document.querySelectorAll('.slide');
     let textContainer = document.querySelector('.texteCar');
@@ -44,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function startAutoPlay() {
-        autoPlayInterval = setInterval(nextSlide, 5000); 
+        autoPlayInterval = setInterval(nextSlide, 3000); 
     }
 
     function stopAutoPlay() {

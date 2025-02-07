@@ -12071,9 +12071,8 @@ ul a {
 
 .texteCar {
   height: 250px;
-  width: 610px;
+  width: 700px;
   background-color: #a39090;
-  box-shadow: 10 14px 20px rgba(0, 0, 0, 0.5);
   margin-top: 10%;
   padding-top: 15%;
   padding: 10%;
@@ -12100,6 +12099,7 @@ img {
   margin-top: 20px;
   position: relative;
   bottom: 80px;
+  left: 25px;
 }
 
 .slide img {
@@ -12123,12 +12123,12 @@ img {
 }
 
 #previous {
-  left: -35px;
+  left: -20px;
   padding: 5px;
 }
 
 #next {
-  right: -45px;
+  right: -120px;
   padding: 5px;
 }
 

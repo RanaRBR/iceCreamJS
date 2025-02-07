@@ -11899,11 +11899,11 @@ ul a {
 }
 
 .about {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .aboutPara {
-  margin-top: 8%;
+  margin-top: 10% !important;
   margin-right: 2%;
 }
 
@@ -11924,7 +11924,7 @@ ul a {
 
 .titre {
   margin-left: 15%;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 
 .bordure2 {
@@ -11950,24 +11950,29 @@ ul a {
   margin-top: 5%;
   margin-bottom: 20%;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
 }
 
 .grisSpec {
-  height: 220px;
+  height: 260px;
   width: 350px;
   background-color: #f0f0f4;
-  padding: -30%;
-  padding-left: 28%;
 }
 .grisSpec img {
-  padding: 10%;
+  padding: 5%;
+  padding-left: 35%;
 }
 
 .gris {
-  height: 220px;
+  height: 260px;
   width: 350px;
   background-color: #f0f0f4;
-  padding-left: 10%;
+  padding-left: 30%;
+}
+.gris img {
+  padding: 1%;
+  padding-left: -12%;
 }
 
 .texte {
@@ -11977,22 +11982,32 @@ ul a {
   margin-left: 10%;
   margin-bottom: 5%;
   margin-top: 5%;
+  text-align: center;
+  padding: 5% !important;
 }
 .texte span {
-  margin-left: 22%;
+  margin-left: 20%;
+}
+.texte h5, .texte .h5 {
+  margin-right: 23%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+.texte button {
+  margin-right: 23%;
 }
 
 .rond {
-  background-color: #2c2cbc;
+  background-color: #e5e5ed;
   border-radius: 50%;
   height: 85px !important;
   width: 85px !important;
   padding: 5%;
-}
-
-.texte {
-  padding: 5% !important;
-  margin-left: 20%;
+  position: absolute;
+  z-index: 2;
+  bottom: 150px;
+  left: 50px;
+  font-style: 1.5rem;
 }
 
 .add {

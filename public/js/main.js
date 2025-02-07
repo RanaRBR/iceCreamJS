@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
     let slides = document.querySelectorAll('.slide');
-    let textContainer = document.querySelector('.texteCar'); 
+    let textContainer = document.querySelector('.texteCar');
     let prevButton = document.getElementById('previous');
     let nextButton = document.getElementById('next');
     let currentSlide = 0;
+    let autoPlayInterval;
 
     let texts = [
         {
@@ -21,13 +22,11 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     function showSlide(index) {
-        slides.forEach((slide, i) => {
+        slides.forEach((slide) => {
             slide.classList.remove('active');
-            if (i === index) {
-                slide.classList.add('active');
-            }
         });
 
+        slides[index].classList.add('active');
         textContainer.innerHTML = `
             <p>${texts[index].content}</p>
             <p class="fw-bold">${texts[index].author}</p>
@@ -44,8 +43,27 @@ document.addEventListener('DOMContentLoaded', function () {
         showSlide(currentSlide);
     }
 
-    nextButton.addEventListener('click', nextSlide);
-    prevButton.addEventListener('click', prevSlide);
+    function startAutoPlay() {
+        autoPlayInterval = setInterval(nextSlide, 5000); 
+    }
+
+    function stopAutoPlay() {
+        clearInterval(autoPlayInterval);
+    }
+
+    nextButton.addEventListener('click', () => {
+        stopAutoPlay();
+        nextSlide();
+        startAutoPlay();
+    });
+
+    prevButton.addEventListener('click', () => {
+        stopAutoPlay();
+        prevSlide();
+        startAutoPlay();
+    });
+
+    startAutoPlay();
 
     showSlide(currentSlide);
 });

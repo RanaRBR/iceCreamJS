@@ -11858,7 +11858,7 @@ body {
 nav {
   width: 100%;
   height: 100%;
-  margin-top: 2%;
+  margin-top: 3%;
 }
 
 #home {
@@ -12022,12 +12022,21 @@ ul a {
   margin-top: 5%;
 }
 
+.grandeD {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 14.7%;
+  margin-top: 10% !important;
+}
+
 .carre1 {
   height: 180px;
   width: 350px;
-  padding: 2%;
-  border: 1px solid #ffbedd;
-  padding: -8%;
+  border: 2px solid #ffbedd !important;
+  padding: 10px;
+  display: grid;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .read {
@@ -12040,6 +12049,13 @@ ul a {
   margin-left: 45%;
   margin-bottom: 5%;
   margin-top: 5%;
+}
+
+.title {
+  margin-top: 2%;
+}
+.title img {
+  margin-top: 25%;
 }
 
 .temoinT {
@@ -12055,7 +12071,7 @@ ul a {
 
 .texteCar {
   height: 250px;
-  width: 600px;
+  width: 610px;
   background-color: #a39090;
   box-shadow: 10 14px 20px rgba(0, 0, 0, 0.5);
   margin-top: 10%;
@@ -12086,9 +12102,9 @@ img {
   bottom: 80px;
 }
 
-.slides img {
-  width: 300px;
-  height: 300px;
+.slide img {
+  width: 200px;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -12107,12 +12123,12 @@ img {
 }
 
 #previous {
-  left: -30px;
+  left: -35px;
   padding: 5px;
 }
 
 #next {
-  right: -30px;
+  right: -45px;
   padding: 5px;
 }
 

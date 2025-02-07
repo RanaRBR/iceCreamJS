@@ -11898,6 +11898,11 @@ ul a {
   color: white;
 }
 
+.order:hover {
+  background-color: black;
+  color: #ffbedd;
+}
+
 .about {
   margin-top: 5%;
 }
@@ -12019,6 +12024,11 @@ ul a {
   border-radius: 25px;
 }
 
+.add:hover {
+  background-color: black;
+  color: #ffbedd;
+}
+
 .see {
   background-color: #f588b6;
   width: 180px;
@@ -12028,6 +12038,11 @@ ul a {
   color: white;
   margin-left: 45%;
   margin-bottom: 5%;
+}
+
+.see:hover {
+  background-color: black;
+  color: #ffbedd;
 }
 
 .services {
@@ -12070,6 +12085,11 @@ ul a {
   margin-left: 45%;
   margin-bottom: 5%;
   margin-top: 5%;
+}
+
+.read:hover {
+  background-color: black;
+  color: #ffbedd;
 }
 
 .temoinT {
@@ -12138,13 +12158,23 @@ ul a {
   padding: 5px;
 }
 
+#previous:hover {
+  background-color: black;
+  color: #ffbedd;
+}
+
 #next {
   right: -135px;
   padding: 5px;
 }
 
+#next:hover {
+  background-color: black;
+  color: #ffbedd;
+}
+
 footer {
-  background-color: #333;
+  background-color: #212121;
   color: white;
   padding: 2rem;
 }
@@ -12206,27 +12236,39 @@ footer {
 
 .newsletter p {
   margin: 0;
+  padding: 5%;
 }
 
 .input-group {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+  margin-bottom: 5%;
 }
 
 .input-group textarea {
   flex: 1;
   padding: 0.5rem;
-  resize: none;
-  min-height: 40px !important;
+  height: 40px;
 }
 
-.input-group #subscribeBtn {
+.send:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+#subscribeBtn {
+  width: 180px;
+  height: 40px;
   background-color: #f588b6;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
+  font-size: 18px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 20%;
+}
+
+#subscribeBtn:hover {
+  background-color: #ffffff;
+  color: black;
 }
 
 .droite i {

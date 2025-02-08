@@ -1,14 +1,4 @@
-let image = document.getElementById('movingImage');
-let isMovingUp = true;
 
-setInterval(() => {
-    if (isMovingUp) {
-        image.style.bottom = '100%'; // Déplace l'image vers le haut
-    } else {
-        image.style.bottom = '0'; // Ramène l'image à sa position initiale
-    }
-    isMovingUp = !isMovingUp; // Inverse la direction
-}, 750); // Change la direction toutes les 750 ms (0,75 seconde)
 //CAROUSSEL
 
 

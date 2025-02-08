@@ -12237,6 +12237,7 @@ footer {
   border: none;
   color: white;
   margin-bottom: 5%;
+  margin-top: 2%;
 }
 
 .droite {
@@ -12261,9 +12262,13 @@ footer {
   gap: 1rem;
 }
 
+#message {
+  background-color: #212121;
+  color: white;
+}
+
 .newsletter p {
   margin: 0;
-  padding: 5%;
 }
 
 .input-group {

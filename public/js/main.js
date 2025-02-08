@@ -1,3 +1,30 @@
+//CHANGEMENT COULEUR BACKGROUND
+
+document.addEventListener('DOMContentLoaded', () => {
+    const grisElements = document.querySelectorAll('.gris');
+    grisElements.forEach(grisElement => {
+        grisElement.addEventListener('mouseover', () => {
+            grisElement.style.backgroundColor = '#f8ecbf';
+        });
+
+        grisElement.addEventListener('mouseout', () => {
+            grisElement.style.backgroundColor = '#f0f0f4';
+        });
+    });
+});
+
+let grisSpec = document.querySelector('.grisSpec');
+
+grisSpec.addEventListener("mouseover", function(){
+    grisSpec.style.backgroundColor = '#f8ecbf';
+})
+
+
+grisSpec.addEventListener("mouseout", function(){
+    grisSpec.style.backgroundColor = '#f0f0f4';
+})
+
+
 
 //CAROUSSEL
 

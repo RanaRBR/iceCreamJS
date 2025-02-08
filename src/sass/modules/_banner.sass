@@ -1,12 +1,42 @@
 .banner
     margin-top: 8%
     padding-bottom: 10%
-    img
-        margin-top: 30%
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+.paragraphe
+    width: 50%
+    margin-left: 15% !important
+    
+.glaceBanner
+    width: 50%
+    overflow: hidden
+
 
 .glaceBanner img
     height: 250px
     width: auto
+    position: absolute
+    bottom: 45%
+    transition: top 25s
+    transform: translateX(10%)
+    animation: moveUpDown 5.5s infinite ease-in-out
+    margin-bottom: 10%
+
+
+@keyframes moveUpDown 
+    0% 
+        bottom: 0
+    
+    50% 
+        bottom: 50px
+    
+    100% 
+        bottom: 0
+   
+
 
 .order
     background-color: $pinkButton

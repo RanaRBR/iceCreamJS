@@ -55,7 +55,7 @@
     img
         padding: 5%
         padding-left: 35%
-        
+
 .gris
     height: 260px
     width: 350px
@@ -66,14 +66,19 @@
     img
         padding: 1%
         padding-left: -12%
+        position: relative
+        top: 35px
+        right: 35px
 
+#fraise
+    position: relative
+    top: 35px
+    right: 35px
 
-
-  
 .texte
     display: block !important
     justify-content: center !important
-    align-items: center    !important
+    align-items: center !important
     margin-left: 10%
     margin-bottom: 5%
     margin-top: 5%
@@ -87,8 +92,7 @@
         padding-top: 5%
     button
         margin-right: 23%
-      
-  
+
 .rond
     background-color: #e5e5ed
     border-radius: 50%
@@ -101,8 +105,6 @@
     left: 50px
     font-style: 1.5rem
 
-
-
 .add
     border: 1px solid $pinkButton
     color: $pinkButton
@@ -111,10 +113,9 @@
     height: 40px
     border-radius: 25px
 
-.add:hover 
+.add:hover
     background-color: black
     color: $pink
-
 
 .see
     background-color: $pinkButton
@@ -126,6 +127,30 @@
     margin-left: 45%
     margin-bottom: 5%
 
-.see:hover 
+.see:hover
     background-color: black
     color: $pink
+
+@media (max-width: 768px)
+    .glaceMain img
+        width: 200px
+        height: auto
+        margin-left: 20%
+        margin-top: 25%
+    .bordure
+        background-color: $pink
+        width: 80px
+        height: 5px
+        border-radius: 15px
+        margin-top: 6%
+        margin-left: 4%
+
+    .glaces3
+        grid-template-columns: repeat(2, 1fr)
+        gap: 30px
+
+    .premierePhoto
+        width: 100%
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5)
+        position: relative
+        z-index: 1

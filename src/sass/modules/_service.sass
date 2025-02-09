@@ -2,18 +2,13 @@
     margin-left: 15%
     margin-top: 5%
 
-
-
-.grandeD 
+.grandeD
     display: grid
     grid-template-columns: repeat(3, 1fr)
     margin-left: 14.7%
     margin-top: 10% !important
-    
 
-
-
-.carre1 
+.carre1
     height: 200px
     width: 350px
     border: 2px solid $pink !important
@@ -24,14 +19,10 @@
     p
         margin-top: 20%
 
-
-
 .title
     margin-top: 2%
     margin-bottom: -15%
 
-
-    
 .read
     background-color: $pinkButton
     width: 180px
@@ -43,7 +34,13 @@
     margin-bottom: 5%
     margin-top: 5%
 
-
-.read:hover 
+.read:hover
     background-color: black
     color: $pink
+
+@media (max-width: 768px)
+    .grandeD
+        grid-template-columns: repeat(1, 1fr)
+        gap: 20px
+        margin-left: 35%
+   

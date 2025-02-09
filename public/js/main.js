@@ -78,11 +78,14 @@ function toggleMode() {
 dark.addEventListener("click", toggleMode);
 light.addEventListener("click", toggleMode);
 
-toggleMode(); 
-
-
-
-
+window.onload = () => {
+    const savedTheme = localStorage.getItem("theme");
+    const isDark = savedTheme === "dark";
+    mode.classList.toggle("darkMode", isDark);
+    mode.classList.toggle("lightMode", !isDark);
+    dark.style.display = isDark ? "none" : "block";
+    light.style.display = isDark ? "block" : "none";
+};
 
 
 //CHANGEMENT COULEUR BACKGROUND

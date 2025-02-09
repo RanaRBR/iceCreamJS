@@ -11909,7 +11909,8 @@ ul a {
   position: absolute;
   bottom: 45%;
   transition: top 25s;
-  transform: translateX(10%);
+  transform: translateX(20%);
+  transform: translateY(30%);
   animation: moveUpDown 5.5s infinite ease-in-out;
   margin-bottom: 10%;
 }
@@ -11939,6 +11940,30 @@ ul a {
   color: #ffbedd;
 }
 
+@media (max-width: 768px) {
+  .glaceBanner img {
+    height: 150px;
+    width: auto;
+    position: absolute;
+    bottom: 45%;
+    transition: top 25s;
+    transform: translateX(20%);
+    transform: translateY(30%);
+    animation: moveUpDown 5.5s infinite ease-in-out;
+    margin-bottom: 20%;
+  }
+  @keyframes moveUpDown {
+    0% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 55px;
+    }
+    100% {
+      bottom: 0;
+    }
+  }
+}
 .about {
   margin-top: 5%;
 }
@@ -12018,6 +12043,15 @@ ul a {
 .gris img {
   padding: 1%;
   padding-left: -12%;
+  position: relative;
+  top: 35px;
+  right: 35px;
+}
+
+#fraise {
+  position: relative;
+  top: 35px;
+  right: 35px;
 }
 
 .texte {
@@ -12085,6 +12119,32 @@ ul a {
   color: #ffbedd;
 }
 
+@media (max-width: 768px) {
+  .glaceMain img {
+    width: 200px;
+    height: auto;
+    margin-left: 20%;
+    margin-top: 25%;
+  }
+  .bordure {
+    background-color: #ffbedd;
+    width: 80px;
+    height: 5px;
+    border-radius: 15px;
+    margin-top: 6%;
+    margin-left: 4%;
+  }
+  .glaces3 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .premierePhoto {
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+  }
+}
 .services {
   margin-left: 15%;
   margin-top: 5%;
@@ -12132,6 +12192,13 @@ ul a {
   color: #ffbedd;
 }
 
+@media (max-width: 768px) {
+  .grandeD {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-left: 35%;
+  }
+}
 .modal {
   display: none;
   position: fixed;
@@ -12274,6 +12341,19 @@ ul a {
   color: #ffbedd;
 }
 
+@media (max-width: 768px) {
+  .caroussel {
+    margin: 10px;
+    margin-right: 20%;
+  }
+  .btnC {
+    font-size: 24px;
+    padding: 10px;
+  }
+  .slide {
+    min-width: 100%;
+  }
+}
 footer {
   background-color: #212121;
   color: white;
@@ -12405,6 +12485,17 @@ footer {
   color: #ffbedd;
 }
 
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .gauche, .droite {
+    width: 100%;
+  }
+  .infos {
+    flex-direction: column;
+  }
+}
 .lightMode {
   background-color: white;
   color: black;
@@ -12423,8 +12514,6 @@ footer {
   height: 100%;
   margin-top: 3%;
   border-radius: 5px;
-}
-.darkMode .texteCar {
   background-color: #fffefe;
   color: black !important;
 }
@@ -12565,6 +12654,7 @@ footer {
 @media (max-width: 768px) {
   .burger {
     display: flex;
+    justify-content: right !important;
   }
   .iconNav {
     order: 1;

@@ -25,7 +25,6 @@
 // .burger span::after
 //     transform: translateY(10px)
 
-
 // .burger.active span
 //     background-color: transparent
 
@@ -38,10 +37,8 @@
 // // .collapse 
 // //     display: none
 
-
 // // .collapse.show 
 // //     display: block
-
 
 // @media (max-width: 768px)
 //     .burger-menu 
@@ -68,32 +65,30 @@
 //     background: black   
 //     transform: translateX(110%)
 //     transition: all .5s ease-in-out
-  
+
 //   .show-nav #navbar-links 
-    
+
 //     width: 100vw
 //     transform: translateX(0)
-  
+
 //   #navbar-link 
 //     transform: translateX(101%)
 //     transition: all .5s ease-in-out
-  
-  
+
 //   .show-nav #navbar-link       
 //     transform: translateX(0)   
-    
+
 //   #navbar-link> a 
 //     display: block
 //     padding: 1rem
 //     font-size: 1.6rem
 //     color: red 
 //     transition: all .4s ease-in-out
-  
+
 //   #navbar-link > a:hover 
 //     padding-left: 2rem
 //     letter-spacing: 5px
-  
-  
+
 //   .burger 
 //     display: block
 //     position: relative
@@ -104,7 +99,7 @@
 //     background: transparent
 //     cursor: pointer
 //     background-color: black
-  
+
 //   .bar 
 //     display: block    
 //     width: 45px
@@ -112,7 +107,7 @@
 //     border-radius: 3px
 //     background-color: $pink
 //     transition: all .5s ease-in-out 
-  
+
 //   .bar::before, .bar::after 
 //     content: ""
 //     width: 45px
@@ -122,42 +117,39 @@
 //     background: pink
 //     border-radius: 3px   
 //     transition: all .5s ease-in-out
-  
+
 //   .bar::before 
 //     transform: translateY(-12px)
-  
+
 //   .bar::after 
 //     transform: translateY(12px)
-  
+
 //   .show-nav .bar 
 //     width: 0
 //     background:transparent    
-  
+
 //   .show-nav .bar::before 
 //     transform: rotate(45deg)
-  
+
 //   .show-nav .bar::after 
 //     transform: rotate(-45deg)
-  
-  
+
 //   /* Liens - Animations */
 
 //   .show-nav .first    
 //     transition: all 1s ease-out
-  
+
 //   .show-nav .second     
 //     transition: all 1.1s ease-out
-  
+
 //   .show-nav .third      
 //     transition: all 1.2s ease-out
-  
+
 //   .show-nav .four       
 //     transition: all 1.3s ease-out
-  
+
 //   .show-nav .fifth      
 //     transition: all 1.4s ease-out
-  
-
 
 // // TABLETTE
 
@@ -169,10 +161,9 @@
 //     height: 1px
 //     background: black
 //     transition: width 0.4s
-  
+
 //   #navbar-link:hover > a::after 
 //     width:100%
-  
 
 //Styles de base pour le bouton burger//
 
@@ -183,12 +174,12 @@
     gap: 10px
 
 #navbar-links .nav-item
-  margin: 0 5px
+    margin: 0 5px
 
 #navbar-links .nav-link
-  padding:  1px 10px
+    padding: 1px 10px
 
-.burger 
+.burger
     display: none
     flex-direction: column
     justify-content: space-around
@@ -206,7 +197,7 @@
     height: 4px
     margin: 6px 0
 
-.burger .bar 
+.burger .bar
     width: 1.5rem
     height: 0.40rem
     background: black
@@ -217,41 +208,39 @@
     margin: 2px 1px 1px 1px
 
 /* Transformation en croix */
-.burger.active .bar:nth-child(1) 
+.burger.active .bar:nth-child(1)
     transform: rotate(45deg)
 
-
-.burger.active .bar:nth-child(2) 
+.burger.active .bar:nth-child(2)
     opacity: 0
 
-
-.burger.active .bar:nth-child(3) 
+.burger.active .bar:nth-child(3)
     transform: rotate(-45deg)
 
-
-.navbar-collapse 
+.navbar-collapse
     width: 100%
     justify-content: center
-    
-.iconNav button 
+
+.iconNav button
     background-color: $pink
     padding: 2px
     transition: background-color 0.3s
 
-
 .iconNav .border-0:hover
     background-color: $pink
 
-
 /* Affichage du menu burger sur les petits écrans */
-@media (max-width: 768px) 
-    .burger 
+@media (max-width: 768px)
+    .burger
         display: flex
+        justify-content: right !important
+        
 
-    .iconNav 
+
+    .iconNav
         order: 1
 
-    #navbarScroll 
+    #navbarScroll
         display: none
         flex-direction: column
         width: 100%
@@ -261,11 +250,8 @@
         background-color: #494646
         color: white !important
         transform: scale(2)
-    
 
-    #navbarScroll.active 
+    #navbarScroll.active
         display: flex
         color: white
         font-size: 12px
-         
-    

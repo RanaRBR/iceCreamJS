@@ -2,12 +2,11 @@
     margin-left: 45%
     margin-top: 5%
 
-.carousselEntier 
+.carousselEntier
     position: relative
     max-width: 600px
     margin: auto
     padding: 10px
-
 
 .texteCar
     height: 250px
@@ -18,33 +17,26 @@
     padding: 10%
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9)
 
-
-
-.slides 
+.slides
     display: flex
     overflow: hidden
 
-
-.slide 
+.slide
     display: none
     width: 100%
     text-align: center
 
-.slide.active 
+.slide.active
     display: block
-
 
 .slide img
     width: 200px
-    height: 200px 
+    height: 200px
     margin-top: 20px
     position: relative
     bottom: 80px
     left: 25px
     object-fit: cover
-
-   
-
 
 .btnC
     position: absolute
@@ -59,27 +51,21 @@
     padding: 20px
     cursor: pointer
 
-
-
-#previous 
+#previous
     left: -15px
     padding: 5px
 
-
-#previous:hover 
+#previous:hover
     background-color: black
     color: $pink
 
-
-#next 
+#next
     right: -135px
     padding: 5px
 
-
-#next:hover 
+#next:hover
     background-color: black
     color: $pink
-
 
 // .guillemet
 //     i
@@ -92,3 +78,15 @@
 //     left: 50px
 //     color: black
 
+@media (max-width: 768px)
+    .caroussel
+        margin: 10px
+        margin-right: 20%
+
+    .btnC
+        font-size: 24px
+        padding: 10px
+        
+
+    .slide
+        min-width: 100%

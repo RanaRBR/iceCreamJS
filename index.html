@@ -12,31 +12,40 @@
 
 <body class="lightMode">
     <section>
-        <nav class="navbar navbar-expand-lg myNav">
+
+        <nav class="navbar navbar-expand-lg myNav" id="navbar">
             <div class="container-fluid w-100 h-100 d-flex justify-content-between mb-5">
                 <div class="logo">
-                    <img src="./public/img/logo.png" alt="">
+                    <img src="./public/img/logo.png" alt="" id="navbar-logo">
                 </div>
+
+                <button class="burger" id="burger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                
+
                 <button class="navbar-toggler yft border-0 " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span><i class="bi bi-list text-white fs-1"></i></span>
                 </button>
                 <div class="collapse navbar-collapse w-100 fw-semibold" id="navbarScroll">
-                    <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll moi" style="--bs-scroll-height: 100px">
+                    <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll moi" style="--bs-scroll-height: 100px" id="navbar-links">
                         <li class="nav-item mx-2">
                             <a class="nav-link active" aria-current="page" href="#" id="home">Home</a>
                         </li>
-                        <li class="nav-item mx-2">
+                        <li class="nav-item mx-2" id="navbar-link">
                             <a class="nav-link" href="#">About</a>
                         </li>
-                        <li class="nav-item mx-2 ">
+                        <li class="nav-item mx-2" id="navbar-link">
                             <a class="nav-link" href="#icecream">Icecream</a>
                         </li>
-                        <li class="nav-item mx-2">
+                        <li class="nav-item mx-2"  id="navbar-link">
                             <a class="nav-link" href="#services">Services</a>
                         </li>
-                        <li class="nav-item mx-2 ">
+                        <li class="nav-item mx-2" id="navbar-link">
                             <a class="nav-link" href="#blog">Blog</a>
                         </li>
                     </ul>
@@ -301,7 +310,7 @@
         <h1 class="text-center text-light">Login</h1>
         <input class="bg-dark text-light border-bottom border-secondary border-1 pb-3" type="email" id="loginEmail" placeholder="Email">
         <input class="bg-dark text-light border-bottom border-secondary border-1 pb-3"  type="password" id="loginPassword" placeholder="Password">
-        <button class="btnRose" onclick="login()">Send</button>
+        <button class="btnRose" onclick="login()">SEND</button>
         <p class="not text-center"><a class="lien" href="#" onclick="showModal('registerModal')">Not registered? Sign up here</a></p>
     </div>
 </div>
@@ -314,7 +323,7 @@
         <input class="bg-dark text-light"  type="email" id="registerEmail" placeholder="Email">
         <input class="bg-dark text-light"  type="tel" id="registerPhone" placeholder="Phone Number">
         <input class="bg-dark text-light"  type="password" id="registerPassword" placeholder="Password">
-        <button class="btnRose" onclick="register()">Send</button>
+        <button class="btnRose" onclick="register()">SEND</button>
     </div>
 </div>
 

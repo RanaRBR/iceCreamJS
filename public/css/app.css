@@ -11919,7 +11919,7 @@ ul a {
     bottom: 0;
   }
   50% {
-    bottom: 25px;
+    bottom: 55px;
   }
   100% {
     bottom: 0;
@@ -12172,7 +12172,7 @@ ul a {
   top: 25px;
   bottom: 20px;
   right: 15px;
-  font-size: 21px;
+  font-size: 19px;
   cursor: pointer;
   border: 2px solid #828282 !important;
   height: 40px;
@@ -12403,23 +12403,86 @@ footer {
   color: #ffbedd;
 }
 
-.lightMode {
-  background-color: white;
-  color: black;
-  transition: 0.5s;
+/* Styles de base pour le bouton burger */
+#burger span {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  gap: 10px;
 }
 
-.darkMode {
-  background-color: #150404 !important;
-  color: #e7dbdb !important;
-  transition: 0.5s;
-  /* Styles pour le mode sombre */
+#navbar-links .nav-item {
+  margin: 0 5px;
 }
 
-.sombre {
-  color: white !important;
-  background-color: black !important;
-  transition: background-color 0.9s ease, color 0.9s ease;
+#navbar-links .nav-link {
+  padding: 1px 10px;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1rem;
+  height: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.bar span {
+  width: 40px;
+  height: 4px;
+  margin: 6px 0;
+}
+
+.burger .bar {
+  width: 1rem;
+  height: 0.25rem;
+  background: black;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+/* Transformation en croix */
+.burger.active .bar:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.burger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active .bar:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/* Affichage du menu burger sur les petits écrans */
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+  #navbarScroll {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    color: white;
+    transform: scale(2);
+  }
+  #navbarScroll.active {
+    display: flex;
+    color: white;
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

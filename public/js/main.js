@@ -215,3 +215,65 @@ document.addEventListener('DOMContentLoaded', function () {
 
     showSlide(currentSlide);
 });
+
+
+
+//MENU BURGER
+
+// let burger = document.querySelector(".burger");
+
+// burger.addEventListener("click", function(){
+//     burger.classList.toggle("active");
+
+// })
+// let burger = document.querySelector(".burger");
+// let navbarCollapse = document.getElementById("navbarScroll");
+
+// burger.addEventListener("click", function() {
+//     burger.classList.toggle("active");
+//     navbarCollapse.classList.toggle("show"); // Ajoute ou enlève la classe 'show' pour afficher/masquer le menu
+// });
+
+
+// function toggleMenu () {  
+//     const navbar = document.querySelector('.navbar');
+//     const burger = document.querySelector('.burger');
+    
+//     burger.addEventListener('click', (e) => {    
+//       navbar.classList.toggle('show-nav');
+//     });    
+//     // bonus
+//     const navbarLinks = document.querySelectorAll('.navbar a');
+//     navbarLinks.forEach(link => {
+//       link.addEventListener('click', (e) => {    
+//         navbar.classList.toggle('show-nav');
+//       }); 
+//     })
+     
+//   }
+//   toggleMenu();
+
+// function toggleMenu() {
+//     const navbar = document.querySelector('#navbar');
+//     const burger = document.querySelector('.burger');
+
+//     if (burger) {
+//         burger.addEventListener('click', () => {
+//             navbar.classList.toggle('show-nav');
+//         });
+//     }
+
+//     const navbarLinks = document.querySelectorAll('#navbar-links a');
+//     navbarLinks.forEach(link => {
+//         link.addEventListener('click', () => {
+//             navbar.classList.remove('show-nav');
+//         });
+//     });
+// }
+
+// document.addEventListener('DOMContentLoaded', toggleMenu);
+
+document.getElementById('burger').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.getElementById('navbarScroll').classList.toggle('active');
+});

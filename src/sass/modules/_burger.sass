@@ -174,7 +174,7 @@
 //     width:100%
   
 
-/* Styles de base pour le bouton burger */
+//Styles de base pour le bouton burger//
 
 #burger span
     height: 50px
@@ -207,14 +207,14 @@
     margin: 6px 0
 
 .burger .bar 
-    width: 1rem
-    height: 0.25rem
+    width: 1.5rem
+    height: 0.40rem
     background: black
     border-radius: 10px
     transition: all 0.3s linear
     position: relative
-    transform-origin: 1px
-
+    transform-origin: 15px
+    margin: 2px 1px 1px 1px
 
 /* Transformation en croix */
 .burger.active .bar:nth-child(1) 
@@ -229,11 +229,27 @@
     transform: rotate(-45deg)
 
 
+.navbar-collapse 
+    width: 100%
+    justify-content: center
+    
+.iconNav button 
+    background-color: $pink
+    padding: 2px
+    transition: background-color 0.3s
+
+
+.iconNav .border-0:hover
+    background-color: $pink
+
+
 /* Affichage du menu burger sur les petits écrans */
 @media (max-width: 768px) 
     .burger 
         display: flex
-    
+
+    .iconNav 
+        order: 1
 
     #navbarScroll 
         display: none
@@ -242,8 +258,8 @@
         position: absolute
         top: 60px
         left: 0
-        background-color: #333
-        color: white
+        background-color: #494646
+        color: white !important
         transform: scale(2)
     
 

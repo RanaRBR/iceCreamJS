@@ -51,68 +51,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //DARK MODE 
 
-// let mode = document.querySelectorAll("body");
-// let dark = document.querySelector("#boutonDark");
-
-// dark.addEventListener("click", function () {
-//   if (mode.className === "lightMode") {
-//     mode.className = "darkMode";
-//   } else {
-//     mode.className = "lightMode";
-//   }
-// });
-// Sélectionne les boutons pour activer le mode sombre et clair
-// Sélectionne les boutons pour activer le mode sombre et clair
-// const boutonDark = document.getElementById("boutonDark");
-// const boutonLight = document.getElementById("boutonLight");
-
-// // Ajoute un écouteur d'événements au bouton pour le mode sombre
-// boutonDark.addEventListener("click", function () {
-//     document.body.classList.add("sombre"); // Ajoute la classe sombre au body
-//     boutonDark.style.display = "none"; // Cache le bouton de la lune
-//     boutonLight.style.display = "block"; // Affiche le bouton du soleil
-// });
-
-// // Ajoute un écouteur d'événements au bouton pour le mode clair
-// boutonLight.addEventListener("click", function () {
-//     document.body.classList.remove("sombre"); // Enlève la classe sombre du body
-//     boutonLight.style.display = "none"; // Cache le bouton du soleil
-//     boutonDark.style.display = "block"; // Affiche le bouton de la lune
-// });
-
-
 // let mode = document.querySelector("body");
 // let dark = document.querySelector("#boutonDark");
+// let light = document.querySelector("#boutonLight");
 
 // dark.addEventListener("click", function () {
-//   if (mode.className === "lightMode") {
-//     mode.className = "darkMode";
-//   } else {
-//     mode.className = "lightMode";
-//   }
+//     if (mode.className === "lightMode") {
+//         mode.className = "darkMode";
+//     } else {
+//         mode.className = "lightMode";
+//     }
 // });
 
-    // // Sélectionnez les boutons de bascule du mode sombre et clair
-    // const darkModeButton = document.getElementById('boutonDark');
-    // const lightModeButton = document.getElementById('boutonLight');
 
-    // // Ajoutez un écouteur d'événements pour le clic sur le bouton de la lune
-    // darkModeButton.addEventListener('click', function() {
-    //     // Activez le mode sombre
-    //     document.body.classList.add('darkMode');
-    //     // Masquez le bouton de la lune et affichez le bouton du soleil
-    //     darkModeButton.style.display = 'none';
-    //     lightModeButton.style.display = 'block';
-    // });
+let mode = document.querySelector("body");
+let dark = document.querySelector("#boutonDark");
+let light = document.querySelector("#boutonLight");
 
-    // // Ajoutez un écouteur d'événements pour le clic sur le bouton du soleil
-    // lightModeButton.addEventListener('click', function() {
-    //     // Désactivez le mode sombre
-    //     document.body.classList.remove('darkMode');
-    //     // Masquez le bouton du soleil et affichez le bouton de la lune
-    //     lightModeButton.style.display = 'none';
-    //     darkModeButton.style.display = 'block';
-    // });
+function toggleMode() {
+    mode.classList.toggle("darkMode");
+    mode.classList.toggle("lightMode");
+    dark.style.display = mode.classList.contains("darkMode") ? "none" : "block";
+    light.style.display = mode.classList.contains("darkMode") ? "block" : "none";
+}
+
+dark.addEventListener("click", toggleMode);
+light.addEventListener("click", toggleMode);
+
+toggleMode(); 
+
+
+
+
 
 
 //CHANGEMENT COULEUR BACKGROUND

@@ -12403,7 +12403,23 @@ footer {
   color: #ffbedd;
 }
 
-/* Styles de base pour le bouton burger */
+.lightMode {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+  transition: background-color 0.9s ease, color 0.9s ease;
+}
+
+.darkMode {
+  background-color: #150404 !important;
+  color: #e7dbdb !important;
+  transition: 0.5s;
+}
+
+#boutonLight {
+  display: none;
+}
+
 #burger span {
   height: 50px;
   width: 50px;
@@ -12440,13 +12456,14 @@ footer {
 }
 
 .burger .bar {
-  width: 1rem;
-  height: 0.25rem;
+  width: 1.5rem;
+  height: 0.4rem;
   background: black;
   border-radius: 10px;
   transition: all 0.3s linear;
   position: relative;
-  transform-origin: 1px;
+  transform-origin: 15px;
+  margin: 2px 1px 1px 1px;
 }
 
 /* Transformation en croix */
@@ -12462,10 +12479,28 @@ footer {
   transform: rotate(-45deg);
 }
 
+.navbar-collapse {
+  width: 100%;
+  justify-content: center;
+}
+
+.iconNav button {
+  background-color: #ffbedd;
+  padding: 2px;
+  transition: background-color 0.3s;
+}
+
+.iconNav .border-0:hover {
+  background-color: #ffbedd;
+}
+
 /* Affichage du menu burger sur les petits écrans */
 @media (max-width: 768px) {
   .burger {
     display: flex;
+  }
+  .iconNav {
+    order: 1;
   }
   #navbarScroll {
     display: none;
@@ -12474,8 +12509,8 @@ footer {
     position: absolute;
     top: 60px;
     left: 0;
-    background-color: #333;
-    color: white;
+    background-color: #494646;
+    color: white !important;
     transform: scale(2);
   }
   #navbarScroll.active {

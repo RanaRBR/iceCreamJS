@@ -123,9 +123,10 @@ footer
 .reseaux i:hover 
     color: $pink
 
-@media (max-width: 768px) 
+@media (min-width: 576px) and (max-width:768px)    
     .footer-grid 
         grid-template-columns: 1fr
+        width: 100% !important
     
 
     .gauche, .droite 
@@ -134,7 +135,7 @@ footer
     .infos 
         flex-direction: column
 
-    .footer-gri
+    .footer-grid
         flex-direction: column // Empiler les colonnes sur les petits écrans
         align-items: flex-start // Aligner à gauche
     

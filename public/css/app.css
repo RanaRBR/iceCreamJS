@@ -12112,12 +12112,10 @@ ul a:hover {
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-  .glaces3 {
-    margin-left: 30%;
-  }
   .forfait {
     gap: 10px !important;
     margin-top: 0;
+    margin: 0 auto !important;
   }
   .premierePhoto {
     width: 350px;
@@ -12139,7 +12137,6 @@ ul a:hover {
   .glaces3 {
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
-    width: 100%;
   }
   .grisSpec {
     height: 260px;
@@ -12553,9 +12550,10 @@ footer {
   color: #ffbedd;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .footer-grid {
     grid-template-columns: 1fr;
+    width: 100% !important;
   }
   .gauche, .droite {
     width: 100%;
@@ -12563,7 +12561,7 @@ footer {
   .infos {
     flex-direction: column;
   }
-  .footer-gri {
+  .footer-grid {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -12661,8 +12659,8 @@ footer {
 }
 
 #burger span {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 45px;
   position: relative;
   gap: 10px;
 }
@@ -12690,8 +12688,8 @@ footer {
 }
 
 .bar span {
-  width: 40px;
-  height: 4px;
+  width: 30px;
+  height: 50px;
   margin: 6px 0;
 }
 
@@ -12699,7 +12697,7 @@ footer {
   width: 1.5rem;
   height: 0.4rem;
   background: black;
-  border-radius: 10px;
+  border-radius: 20px;
   transition: all 0.3s linear;
   position: relative;
   transform-origin: 15px;
@@ -12734,30 +12732,50 @@ footer {
   background-color: #ffbedd;
 }
 
-/* Affichage du menu burger sur les petits écrans */
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .burger {
     display: flex;
-    justify-content: right !important;
+    justify-content: center !important;
   }
-  .iconNav {
-    order: 1;
+  .icoNav i {
+    display: flex;
+    background-color: transparent !important;
+  }
+  .IcoNav button {
+    background-color: transparent !important;
+    border: none !important;
+    color: black;
+    cursor: pointer;
+    border-raduis: 0% !important;
+  }
+  #login {
+    background-color: transparent !important;
+    border: none !important;
+    color: black;
+    cursor: pointer;
+    border-raduis: 0% !important;
+  }
+  .IcoNav button:hover {
+    opacity: 0.8;
   }
   #navbarScroll {
     display: none;
-    flex-direction: column;
-    width: 100%;
+    flex-direction: row;
+    width: 80%;
     position: absolute;
-    top: 60px;
     left: 0;
     background-color: #494646;
     color: white !important;
-    transform: scale(2);
+    transform: scale(1);
   }
   #navbarScroll.active {
     display: flex;
-    color: white;
+    color: white !important;
     font-size: 12px;
+  }
+  .navbar-nav {
+    flex-direction: column !important;
+    margin-right: 30% !important;
   }
 }
 

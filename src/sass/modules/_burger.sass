@@ -1,113 +1,257 @@
 
-//Styles de base pour le bouton burger//
+// Styles de base pour le bouton burger//
 
-#burger span
-    height: 40px
-    width: 45px
-    position: relative
-    gap: 10px
+// burger span
+//     height: 40px
+//     width: 45px
+//     position: relative
+//     gap: 10px
 
-#navbar-links .nav-item
-    margin: 0 5px
+// #navbar-links .nav-item
+//     margin: 0 5px
 
-#navbar-links .nav-link
-    padding: 1px 10px
+// #navbar-links .nav-link
+//     padding: 1px 10px
 
+// .burger
+//     display: none
+//     flex-direction: column
+//     justify-content: space-around
+//     width: 1rem
+//     height: 1rem
+//     background: transparent
+//     border: none
+//     cursor: pointer
+//     padding: 0
+//     position: relative
+//     z-index: 10
+
+// .bar span
+//     width: 30px
+//     height: 50px
+//     margin: 6px 0
+
+// .burger2 .bar
+//     width: 1.5rem
+//     height: 0.40rem
+//     background: black
+//     border-radius: 20px
+//     transition: all 0.3s linear
+//     position: relative
+//     transform-origin: 15px
+//     margin: 2px 1px 1px 1px
+
+
+
+
+// @media (min-width: 576px) and (max-width:768px)
+//     #login
+//         background-color: transparent !important
+//         border: none !important
+//         color: black
+//         cursor: pointer
+//         border-raduis: 0% !important
+
+//     .navbar-links > a::after
+//         display: block
+//         content: ""
+//         width: 0
+//         height: 1px
+//         background: white
+//         transition: width .4s
+
+//     .navbar-links:hover > a::after
+//         width: 100%
+
+// // //     *  Small device */
+//     .navbar-links
+//         overflow: hidden
+//         display: flex
+//         flex-direction: column
+//         width: 0
+//         height: calc(100vh - 65px)
+//         position: absolute
+//         top: 65px
+//         right: 0
+//         background: black
+//         transform: translateX(110%)
+//         transition: all .5s ease-in-out
+
+//     .show-nav .navbar-links
+
+//         width: 100vw
+//         transform: translateX(0)
+
+//     .navbar-link
+//         transform: translateX(101%)
+//         transition: all .5s ease-in-out
+
+//     .show-nav .navbar-link
+//         transform: translateX(0)
+
+//     .navbar-link > a
+//         display: block
+//         padding: 1rem
+//         font-size: 1.6rem
+//         color: black
+//         transition: all .4s ease-in-out
+
+//     .navbar-link > a:hover
+//         padding-left: 2rem
+//         letter-spacing: 5px
+// // //   
+
+// // //   /* Toggle menu */
+//     .burger
+//         display: block
+//         position: relative
+//         padding: 0
+//         width: 45px
+//         height: 45px
+//         border: none
+//         background: transparent
+//         cursor: pointer
+
+//     .bar
+//         display: block
+//         width: 45px
+//         height: 4px
+//         border-radius: 3px
+//         background: black
+//         transition: all .5s ease-in-out
+
+//     .bar::before, .bar::after
+//         content: ""
+//         width: 45px
+//         height: 4px
+//         position: absolute
+//         left: 0
+//         background: black
+//         border-radius: 3px
+//         transition: all .5s ease-in-out
+
+//     .bar::before
+//         transform: translateY(-12px)
+
+//     .bar::after
+//         transform: translateY(12px)
+
+//     .show-nav .bar
+//         width: 0
+//         background: transparent
+
+//     .show-nav .bar::before
+//         transform: rotate(45deg)
+
+//     .show-nav .bar::after
+//         transform: rotate(-45deg)
+
+//   /* Bonus - Animations */
+//   .show-nav .first     
+//     transition : all 1s ease-out
+
+//   .show-nav .second      
+//     transition : all 1.1s ease-out
+
+//   .show-nav .third      
+//     transition: all 1.2s ease-out
+
+//   .show-nav .four      
+//     transition: all 1.3s ease-out
+
+//   .show-nav .fifth      
+//     transition: all 1.4s ease-out
+
+
+
+/* Styles pour le bouton burger */
 .burger
     display: none
-    flex-direction: column
-    justify-content: space-around
-    width: 1rem
-    height: 1rem
-    background: transparent
-    border: none
-    cursor: pointer
+    position: relative
     padding: 0
-    position: relative
-    z-index: 10
+    width: 45px
+    height: 45px
+    border: none
+    background: transparent
+    cursor: pointer
+  
 
-.bar span
-    width: 30px
-    height: 50px
-    margin: 6px 0
-
-.burger .bar
-    width: 1.5rem
-    height: 0.40rem
+.bar 
+    display: block
+    width: 45px
+    height: 4px
+    border-radius: 3px
     background: black
-    border-radius: 20px
-    transition: all 0.3s linear
-    position: relative
-    transform-origin: 15px
-    margin: 2px 1px 1px 1px
+    transition: all .5s ease-in-out
 
-/* Transformation en croix */
-.burger.active .bar:nth-child(1)
-    transform: rotate(45deg)
 
-.burger.active .bar:nth-child(2)
-    opacity: 0
+.bar::before, .bar::after
+    content: ""
+    width: 45px
+    height: 4px
+    position: absolute
+    left: 0px
+    background: #ec92cd
+    border-radius: 3px
+    transition: all .5s ease-in-out
 
-.burger.active .bar:nth-child(3)
-    transform: rotate(-45deg)
 
-.navbar-collapse
-    width: 100%
-    justify-content: center
+.bar::before
+    transform: translateY(-12px)
 
-.iconNav button
-    background-color: $pink
-    padding: 2px
-    transition: background-color 0.3s
 
-.iconNav .border-0:hover
-    background-color: $pink
+.bar::after 
+    transform: translateY(12px)
 
-@media (min-width: 576px) and (max-width:768px)
 
-    .burger
+/* Affiche le bouton burger en mode mobile */
+@media (max-width: 768px) 
+    .burger 
+        display: block
+    
+
+    .navbar-links
+        overflow: hidden
         display: flex
-        justify-content: center !important
-
-    .icoNav i
-        display: flex
-        background-color: transparent !important
-
-    .IcoNav button
-        background-color: transparent !important
-        border: none !important
-        color: black 
-        cursor: pointer
-        border-raduis: 0% !important
-
-    #login
-        background-color: transparent !important
-        border: none !important
-        color: black 
-        cursor: pointer
-        border-raduis: 0% !important
-
-    .IcoNav button:hover
-        opacity: 0.8
-        
-    #navbarScroll
-        display: none
-        flex-direction: row
-        width: 80%
+        flex-direction: column
+        width: 0
+        height: calc(100vh - 65px)
         position: absolute
-        left: 0
-        background-color: #494646
+        top: 65px
+        right: 50px
+        background: black
+        transform: translateX(110%)
+        transition: all .5s ease-in-out
+    
+
+    .show-nav .navbar-links 
+        width: 100vw
+        transform: translateX(0)
+    
+
+    .navbar-link 
+        transform: translateX(101%)
+        transition: all .5s ease-in-out
+    
+
+    .show-nav .navbar-link 
+        transform: translateX(0)
+    
+
+    .navbar-link > a 
+        display: block
+        padding: 1rem
+        font-size: 1.6rem
         color: white !important
-        transform: scale(1)
+        transition: all .4s ease-in-out
+    
 
-    #navbarScroll.active
-        display: flex
+    .navbar-link > a:hover 
+        padding-left: 2rem
+        letter-spacing: 5px
+
+    .icones button
+        margin-left: 20%
+    .bar span
         color: white !important
-        font-size: 12px
-
-    .navbar-nav 
-        flex-direction: column !important
-        margin-right: 30% !important
-
-   
-   
+    

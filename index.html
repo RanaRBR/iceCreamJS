@@ -11,12 +11,12 @@
 </head>
 
 <body class="lightMode">
-    <header class="d-flex justify-content-between px-2 align-items-center bg-white fixed-top">
+    <!-- <header class="d-flex justify-content-between px-2 align-items-center bg-white fixed-top">
         <div class="w-25 mx-5">
             <img src="./public/img/logo.png" alt="" class="h-100">
         </div>
-        <nav class="w-50 nav1 d-flex tousLi">
-            <ul class="d-flex justify-content-around m-0 list-none p-0 gap-5">
+        <nav class="w-50 nav1 d-flex tousLi show-nav">
+            <ul class="navbar-links justify-content-around m-0 list-none p-0 gap-5">
                 <li class="nav-item mx-2">
                     <a class="nav-link active" aria-current="page" href="#" id="home">Home</a>
                 </li>
@@ -24,7 +24,7 @@
                     <a class="nav-link" href="#about1">About</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#glacesF">Icecream</a>
+                    <a class="nav-link" href="#glacesF">Ice Cream</a>
                 </li>
                 <li>
                     <a class="nav-link" href="#services1">Services</a>
@@ -32,31 +32,128 @@
                 <li>
                     <a class="nav-link" href="#blog">Blog</a>
                 </li>
-                <!-- <li id="home" href="#about1">Home</li>
-                <li href="#about1">About</li>
-                <li href="#glacesF">Ice Cream</li>
-                <li href="services1">Services</li>
-                <li>Blog</li> -->
             </ul>
         </nav>
        <div class="d-flex flex-column">
-        <button class="burger2">responsive</button>
+        <button class="burger2">
+                <span class="bar"></span>
+        </button>
         <nav class="nav2">
             <ul class="d-flex justify-content-evenly m-0 list-none p-0">
-                <li>Home</li>
-                <li>About</li>
-                <li>Ice Cream</li>
-                <li>Services</li>
-                <li>Blog</li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" href="#" id="home">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#about1">About</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#glacesF">Ice Cream</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#services1">Services</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
             </ul>
         </nav>
        </div>
         <div class="icones w-25 d-flex justify-content-end mx-5 gap-5">
-            <button><span id="login">LOGIN</span><i class="bi bi-person-fill"></i></button>
-            <button><i class="bi bi-moon-fill"></i></button>
+            <button type="button" class="bg-white text-black fw-semibold " id="boutonDark"><i
+                class="fs-5 bi bi-moon"></i></button>
+        <button type="button" class="bg-white text-black fw-semibold "
+            style="display: none;" id="boutonLight"><i class="fs-3 bi bi-brightness-low mx-5"></i>
+        </button>
         </div>
     </header>
+ -->
+
+    <nav class="navbar dark-mode d-flex justify-content-between px-2 align-items-center bg-white fixed-top show-nav" role="navigation">
+        <div class="w-25 mx-5">
+            <img src="./public/img/logo.png" alt="" class="h-100">
+        </div>
+        <ul class="navbar-links justify-content-around m-0 list-none p-0 gap-5">
+            <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#" id="home">Home</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#about1">About</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#glacesF">Ice Cream</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#services1">Services</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#blog">Blog</a>
+            </li>
+        </ul>
+        <div class="icones w-25 d-flex justify-content-center mx-5 gap-5">
+            <button type="button" class="pink border-0 bg-white text-black fw-semibold textL" id="login">Login<span
+                    class="fs-5 bi bi-person-fill"></span></button>
+            <button type="button" class="bg-white text-black fw-semibold " id="boutonDark"><i
+                    class="fs-5 bi bi-moon"></i></button>
+            <button type="button" class="bg-white text-black fw-semibold " style="display: none;" id="boutonLight"><i
+                    class="fs-3 bi bi-brightness-low mx-5"></i>
+            </button>
+        </div>
+        <button class="burger">
+            <span class="bar"></span>
+        </button>
+        
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section>
+
+
         <!-- <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
             <div class="container-fluid w-100 h-100 d-flex justify-content-between mb-5">
                 <div class="logo">
@@ -120,19 +217,20 @@
     </section>
     <main>
         <section id="about1">
-        <div class="about w-100 d-flex justify-content-between">
-            <div class="glaceMain w-50"><img src="./public/img/about-img.png" alt=""></div>
-            <div class="resp w-50 ">
-                <div class="aboutPara d-flex">
-                    <h1 class="fw-bolder fs-1 mb-4">About Ice cream</h1>
-                    <div class="bordure"></div>
+            <div class="about w-100 d-flex justify-content-between">
+                <div class="glaceMain w-50"><img src="./public/img/about-img.png" alt=""></div>
+                <div class="resp w-50 ">
+                    <div class="aboutPara d-flex">
+                        <h1 class="fw-bolder fs-1 mb-4">About Ice cream</h1>
+                        <div class="bordure"></div>
+                    </div>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, reprehenderit.<br> Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Sit, iste. <br> Lorem ipsum dolor sit amet.
+                    </p>
+                    <button class="order fs-6 mt-5">Read More</button>
                 </div>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, reprehenderit.<br> Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Sit, iste. <br> Lorem ipsum dolor sit amet.</p>
-                <button class="order fs-6 mt-5">Read More</button>
             </div>
-        </div>
-     </section>
+        </section>
 
         <section id="glacesF" class="mt-5">
             <div class="titre w-100 mb-5">
@@ -214,7 +312,8 @@
                             <div class="texte">
                                 <div id="seul">
                                     <span class="rond fst-italic">$10</span>
-                                </div>                               <h5 class="mt-4">Strawberry Ice Cream</h5>
+                                </div>
+                                <h5 class="mt-4">Strawberry Ice Cream</h5>
                                 <button class="add">Add To Cart</button>
                             </div>
                         </div>
@@ -353,10 +452,13 @@
     <div class="modal-content bg-dark w-25">
         <span class="close p-1 fs-2 pb-2" onclick="closeModal('loginModal')">&times;</span>
         <h1 class="text-center text-light">Login</h1>
-        <input class="bg-dark text-light border-bottom border-secondary border-1 pb-3" type="email" id="loginEmail" placeholder="Email">
-        <input class="bg-dark text-light border-bottom border-secondary border-1 pb-3"  type="password" id="loginPassword" placeholder="Password">
+        <input class="bg-dark text-light border-bottom border-secondary border-1 pb-3" type="email" id="loginEmail"
+            placeholder="Email">
+        <input class="bg-dark text-light border-bottom border-secondary border-1 pb-3" type="password"
+            id="loginPassword" placeholder="Password">
         <button class="roseB" onclick="login()">SEND</button>
-        <p class="text-center mt-5 "><a class="lien" href="#" onclick="showModal('registerModal')">Not registered? Sign up here</a></p>
+        <p class="text-center mt-5 "><a class="lien" href="#" onclick="showModal('registerModal')">Not registered? Sign
+                up here</a></p>
     </div>
 </div>
 
@@ -364,10 +466,14 @@
     <div class="modal-content bg-dark w-25">
         <span class="close p-1 fs-2 pb-2" onclick="closeModal('registerModal')">&times;</span>
         <h1 class="text-center text-light">Register</h1>
-        <input class="bg-dark text-light text-light border-bottom border-secondary border-1 pb-3"  type="text" id="registerName" placeholder="Name">
-        <input class="bg-dark text-light text-light border-bottom border-secondary border-1 pb-3"  type="email" id="registerEmail" placeholder="Email">
-        <input class="bg-dark text-light text-light border-bottom border-secondary border-1 pb-3"  type="tel" id="registerPhone" placeholder="Phone Number">
-        <input class="bg-dark text-light text-light border-bottom border-secondary border-1 pb-3"  type="password" id="registerPassword" placeholder="Password">
+        <input class="bg-dark text-light text-light border-bottom border-secondary border-1 pb-3" type="text"
+            id="registerName" placeholder="Name">
+        <input class="bg-dark text-light text-light border-bottom border-secondary border-1 pb-3" type="email"
+            id="registerEmail" placeholder="Email">
+        <input class="bg-dark text-light text-light border-bottom border-secondary border-1 pb-3" type="tel"
+            id="registerPhone" placeholder="Phone Number">
+        <input class="bg-dark text-light text-light border-bottom border-secondary border-1 pb-3" type="password"
+            id="registerPassword" placeholder="Password">
         <button class="roseB" onclick="register()">SEND</button>
     </div>
 </div>

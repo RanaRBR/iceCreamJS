@@ -11952,7 +11952,7 @@ ul a:hover {
     width: 35%;
   }
   .glaceBanner img {
-    width: 250px;
+    width: 220px;
     height: auto;
   }
 }
@@ -12112,6 +12112,13 @@ ul a:hover {
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
+  .glaces3 {
+    margin-left: 30%;
+  }
+  .forfait {
+    gap: 10px !important;
+    margin-top: 0;
+  }
   .premierePhoto {
     width: 350px;
   }
@@ -12215,6 +12222,7 @@ ul a:hover {
 @media (max-width: 768px) {
   .grandeD {
     grid-template-columns: repeat(1, 1fr);
+    margin-left: 20%;
   }
   .service1 {
     margin: 0 center;
@@ -12227,6 +12235,9 @@ ul a:hover {
   }
   .grandeD {
     gap: 30px;
+  }
+  .read {
+    margin-left: 44% !important;
   }
 }
 .modal {
@@ -12385,12 +12396,30 @@ ul a:hover {
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
+  .carousselEntier {
+    width: 100% !important;
+    position: relative;
+  }
+  .texteCar {
+    width: 90% !important;
+    margin-left: 5%;
+  }
+  #next {
+    right: 15px;
+  }
+  #previous {
+    left: -55px;
+  }
   .btnC {
     font-size: 24px;
     padding: 10px;
   }
   .slide {
-    min-width: 100%;
+    width: 350px !important;
+    position: relative;
+  }
+  .slide img {
+    left: 85px;
   }
 }
 footer {

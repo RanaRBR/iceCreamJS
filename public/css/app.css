@@ -12112,6 +12112,9 @@ ul a:hover {
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
+  .premierePhoto {
+    width: 350px;
+  }
   .glaceMain img {
     width: 200px;
     height: auto;
@@ -12133,17 +12136,18 @@ ul a:hover {
   }
   .grisSpec {
     height: 260px;
-    width: 600px;
+    width: 350px;
   }
   .grisSpec img {
     margin-left: 8%;
   }
   .gris {
     height: 260px;
-    width: 600px;
+    width: 350px;
   }
   .gris img {
-    margin-left: 15%;
+    margin-left: 3%;
+    margin-top: 2%;
   }
   .bordure2 {
     margin-left: 61%;
@@ -12151,14 +12155,14 @@ ul a:hover {
   .rond {
     position: absolute;
     z-index: 2;
-    bottom: 205px;
-    left: 145px;
+    bottom: 180px;
+    left: 60px;
   }
   h5, .h5 {
-    margin-left: 20% !important;
+    margin-left: 10% !important;
   }
   button {
-    margin-left: 23% !important;
+    margin-left: 13% !important;
   }
 }
 .services {
@@ -12220,6 +12224,9 @@ ul a:hover {
     height: 250px;
     width: 450px;
     padding-top: 8%;
+  }
+  .grandeD {
+    gap: 30px;
   }
 }
 .modal {
@@ -12377,11 +12384,7 @@ ul a:hover {
   color: #ffbedd;
 }
 
-@media (max-width: 768px) {
-  .caroussel {
-    margin: 10px;
-    margin-right: 20%;
-  }
+@media (min-width: 576px) and (max-width: 768px) {
   .btnC {
     font-size: 24px;
     padding: 10px;
@@ -12530,6 +12533,23 @@ footer {
   }
   .infos {
     flex-direction: column;
+  }
+  .footer-gri {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .gauche, .droite {
+    width: 100%;
+    margin: 0;
+  }
+  .input-group {
+    flex-direction: column;
+  }
+  .send {
+    margin-top: 5%;
+  }
+  #subscribeBtn {
+    margin-top: 5%;
   }
 }
 .lightMode {

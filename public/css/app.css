@@ -11855,37 +11855,22 @@ body {
   overflow-x: hidden !important;
 }
 
-nav {
-  background-color: white;
-  padding-top: 2% !important;
+header {
+  border-bottom: 1px solid pink;
+  height: 80px;
 }
-
-#home {
-  text-decoration-color: none;
-  color: #ffbedd !important;
+header ul {
+  list-style: none;
+  font-weight: 500;
 }
-
-ul a {
-  color: black !important;
+header .burger2 {
+  display: none;
 }
-
-ul a:hover {
-  color: #ffbedd !important;
+header .nav2 {
+  display: none;
 }
-
-.myNav {
-  border-bottom: 2px solid #ffbedd !important;
-  width: 96%;
-  margin-left: 2% !important;
-}
-
-#login {
-  color: black;
-  transition: color 0.3s ease;
-}
-
-#login:hover {
-  color: #ffbedd;
+header .ouvert {
+  display: flex !important;
 }
 
 .banner {
@@ -12006,7 +11991,6 @@ ul a:hover {
 .premierePhoto {
   width: 100%;
   margin-top: 5%;
-  margin-bottom: 20%;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 1;
@@ -12118,7 +12102,7 @@ ul a:hover {
     margin: 0 auto !important;
   }
   .premierePhoto {
-    width: 350px;
+    width: 400px;
   }
   .glaceMain img {
     width: 200px;
@@ -12137,17 +12121,18 @@ ul a:hover {
   .glaces3 {
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
+    margin-left: 20% !important;
   }
   .grisSpec {
     height: 260px;
-    width: 350px;
+    width: 400px;
   }
   .grisSpec img {
     margin-left: 8%;
   }
   .gris {
     height: 260px;
-    width: 350px;
+    width: 400px;
   }
   .gris img {
     margin-left: 3%;
@@ -12159,14 +12144,17 @@ ul a:hover {
   .rond {
     position: absolute;
     z-index: 2;
-    bottom: 180px;
-    left: 60px;
+    bottom: 160px;
+    left: 80px;
   }
   h5, .h5 {
     margin-left: 10% !important;
   }
   button {
     margin-left: 13% !important;
+  }
+  .see {
+    margin-left: 40% !important;
   }
 }
 .services {
@@ -12216,7 +12204,7 @@ ul a:hover {
   color: #ffbedd;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .grandeD {
     grid-template-columns: repeat(1, 1fr);
     margin-left: 20%;
@@ -12311,6 +12299,19 @@ ul a:hover {
   color: #ffbedd;
 }
 
+@media (min-width: 576px) and (max-width: 768px) {
+  .modal {
+    width: 100% !important;
+  }
+  .modal .modal-content {
+    width: 50% !important;
+    height: 90% !important;
+  }
+  .modal .modal-content button {
+    height: 60px !important;
+    width: 180px;
+  }
+}
 .temoinT {
   margin-left: 45%;
   margin-top: 5%;
@@ -12398,25 +12399,29 @@ ul a:hover {
     position: relative;
   }
   .texteCar {
-    width: 90% !important;
-    margin-left: 5%;
+    width: 80% !important;
+    margin-left: 15%;
   }
   #next {
-    right: 15px;
+    right: 5px;
   }
   #previous {
-    left: -55px;
+    left: -5px;
   }
   .btnC {
     font-size: 24px;
     padding: 10px;
   }
   .slide {
-    width: 350px !important;
+    width: 300px !important;
     position: relative;
   }
   .slide img {
-    left: 85px;
+    left: 105px;
+    top: -65px;
+  }
+  .slide img ul {
+    margin: 0;
   }
 }
 footer {
@@ -12551,6 +12556,9 @@ footer {
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
+  footer {
+    width: 100% !important;
+  }
   .footer-grid {
     grid-template-columns: 1fr;
     width: 100% !important;

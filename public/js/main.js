@@ -63,28 +63,28 @@ document.addEventListener("DOMContentLoaded", function () {
 // });
 
 
-let mode = document.querySelector("body");
-let dark = document.querySelector("#boutonDark");
-let light = document.querySelector("#boutonLight");
+// let mode = document.querySelector("body");
+// let dark = document.querySelector("#boutonDark");
+// let light = document.querySelector("#boutonLight");
 
-function toggleMode() {
-    mode.classList.toggle("darkMode");
-    mode.classList.toggle("lightMode");
-    dark.style.display = mode.classList.contains("darkMode") ? "none" : "block";
-    light.style.display = mode.classList.contains("darkMode") ? "block" : "none";
-}
+// function toggleMode() {
+//     mode.classList.toggle("darkMode");
+//     mode.classList.toggle("lightMode");
+//     dark.style.display = mode.classList.contains("darkMode") ? "none" : "block";
+//     light.style.display = mode.classList.contains("darkMode") ? "block" : "none";
+// }
 
-dark.addEventListener("click", toggleMode);
-light.addEventListener("click", toggleMode);
+// dark.addEventListener("click", toggleMode);
+// light.addEventListener("click", toggleMode);
 
-window.onload = () => {
-    const savedTheme = localStorage.getItem("theme");
-    const isDark = savedTheme === "dark";
-    mode.classList.toggle("darkMode", isDark);
-    mode.classList.toggle("lightMode", !isDark);
-    dark.style.display = isDark ? "none" : "block";
-    light.style.display = isDark ? "block" : "none";
-};
+// window.onload = () => {
+//     const savedTheme = localStorage.getItem("theme");
+//     const isDark = savedTheme === "dark";
+//     mode.classList.toggle("darkMode", isDark);
+//     mode.classList.toggle("lightMode", !isDark);
+//     dark.style.display = isDark ? "none" : "block";
+//     light.style.display = isDark ? "block" : "none";
+// };
 
 
 //CHANGEMENT COULEUR BACKGROUND
@@ -245,8 +245,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // document.addEventListener('DOMContentLoaded', toggleMenu);
 
-document.getElementById('burger').addEventListener('click', function() {
-    this.classList.toggle('active');
-    document.getElementById('navbarScroll').classList.toggle('active');
-});
+// document.getElementById('burger').addEventListener('click', function() {
+//     this.classList.toggle('active');
+//     document.getElementById('navbarScroll').classList.toggle('active');
+// });
 
+
+let burger2 = document.querySelector('.burger2')
+let nav1 = document.querySelector('.nav1')
+let nav2 = document.querySelector('.nav2')
+
+
+
+window.addEventListener('resize', function() {
+    if (window.innerWidth <= 884) {
+        burger2.style.display = "flex"
+        nav1.style.display = "none"
+    } else {
+        burger2.style.display = "none"
+        nav1.style = ""
+        nav1.firstElementChild.style.display = "flex"
+        nav2.classList.remove('ouvert')
+    }
+})
+
+burger2.addEventListener('click', function() {
+    nav2.classList.toggle('ouvert')
+})

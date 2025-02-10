@@ -13,7 +13,7 @@
 <body class="lightMode">
     <section>
 
-        <nav class="navbar navbar-expand-lg myNav" id="navbar">
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
             <div class="container-fluid w-100 h-100 d-flex justify-content-between mb-5">
                 <div class="logo">
                     <img src="./public/img/logo.png" alt="" id="navbar-logo">
@@ -50,8 +50,8 @@
                         </li>
                     </ul>
                     <div class="iconNav gap-5 d-flex">
-                        <button type="button" class="border-0 bg-white text-black fw-semibold" id="login">Login<i
-                                class="fs-5 bi bi-person-fill"></i></button>
+                        <button type="button" class="border-0 bg-white text-black fw-semibold textL" id="login">Login<span
+                                class="fs-5 bi bi-person-fill"></span></button>
                         <div class="d-flex IcoNav">
                             <button type="button" class="border-0 bg-white text-black fw-semibold "  id="boutonDark"><i
                                     class="fs-5  bi bi-moon"></i></button>
@@ -312,7 +312,7 @@
         <input class="bg-dark text-light border-bottom border-secondary border-1 pb-3" type="email" id="loginEmail" placeholder="Email">
         <input class="bg-dark text-light border-bottom border-secondary border-1 pb-3"  type="password" id="loginPassword" placeholder="Password">
         <button class="roseB" onclick="login()">SEND</button>
-        <p class="not text-center"><a class="lien" href="#" onclick="showModal('registerModal')">Not registered? Sign up here</a></p>
+        <p class="text-center mt-5 "><a class="lien" href="#" onclick="showModal('registerModal')">Not registered? Sign up here</a></p>
     </div>
 </div>
 

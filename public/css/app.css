@@ -12741,21 +12741,27 @@ footer {
 
 /* Affiche le bouton burger en mode mobile */
 @media (max-width: 768px) {
+  .navbar {
+    width: 80%;
+  }
   .burger {
     display: block;
+  }
+  .burger button {
+    align-items: flex-end !important;
   }
   .navbar-links {
     overflow: hidden;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 0;
-    height: calc(100vh - 65px);
+    height: calc(30vh - 65px);
     position: absolute;
     top: 65px;
-    right: 50px;
-    background: black;
-    transform: translateX(110%);
-    transition: all 0.5s ease-in-out;
+    right: -95px;
+    background: #474545;
+    transform: translateX(120%);
+    transition: all 1.5s ease-in-out;
   }
   .show-nav .navbar-links {
     width: 100vw;
@@ -12778,12 +12784,6 @@ footer {
   .navbar-link > a:hover {
     padding-left: 2rem;
     letter-spacing: 5px;
-  }
-  .icones button {
-    margin-left: 20%;
-  }
-  .bar span {
-    color: white !important;
   }
 }
 

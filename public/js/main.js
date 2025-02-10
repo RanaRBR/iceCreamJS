@@ -1,13 +1,12 @@
 //MODAL
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     let loginModal = document.getElementById('loginModal');
-//     let loginButton = document.getElementById('login');
-//     let closeButton = document.querySelector('.close');
-
-
 document.addEventListener("DOMContentLoaded", function () {
     function showModal(id) {
+        // Ferme tous les modals ouverts avant d'afficher le nouveau
+        document.querySelectorAll(".modal").forEach(modal => {
+            modal.style.display = "none";
+        });
+
         document.getElementById(id).style.display = "flex";
     }
 
@@ -16,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     document.getElementById("login")?.addEventListener("click", () => showModal("loginModal"));
+
     document.querySelector(".lien")?.addEventListener("click", (event) => {
         event.preventDefault();
         showModal("registerModal");
@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
 
 
 //HOOVER
@@ -250,3 +249,4 @@ document.getElementById('burger').addEventListener('click', function() {
     this.classList.toggle('active');
     document.getElementById('navbarScroll').classList.toggle('active');
 });
+

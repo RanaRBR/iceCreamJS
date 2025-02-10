@@ -305,26 +305,26 @@
     <script src="./public/js/main.js"></script>
 </body>
 
-<div id="loginModal" class="modal bg-secondary">
-    <div class="modal-content bg-dark w-25 h-50">
-        <span class="close p-1 fs-2 pb3" onclick="closeModal('loginModal')">&times;</span>
+<div id="loginModal" class="modal">
+    <div class="modal-content bg-dark w-25">
+        <span class="close p-1 fs-2 pb-2" onclick="closeModal('loginModal')">&times;</span>
         <h1 class="text-center text-light">Login</h1>
         <input class="bg-dark text-light border-bottom border-secondary border-1 pb-3" type="email" id="loginEmail" placeholder="Email">
         <input class="bg-dark text-light border-bottom border-secondary border-1 pb-3"  type="password" id="loginPassword" placeholder="Password">
-        <button class="btnRose" onclick="login()">SEND</button>
+        <button class="roseB" onclick="login()">SEND</button>
         <p class="not text-center"><a class="lien" href="#" onclick="showModal('registerModal')">Not registered? Sign up here</a></p>
     </div>
 </div>
 
-<div id="registerModal" class="modal bg-secondary">
+<div id="registerModal" class="modal">
     <div class="modal-content bg-dark w-25">
-        <span class="close" onclick="closeModal('registerModal')">&times;</span>
+        <span class="close p-1 fs-2 pb-2" onclick="closeModal('registerModal')">&times;</span>
         <h1 class="text-center text-light">Register</h1>
-        <input class="bg-dark text-light"  type="text" id="registerName" placeholder="Name">
-        <input class="bg-dark text-light"  type="email" id="registerEmail" placeholder="Email">
-        <input class="bg-dark text-light"  type="tel" id="registerPhone" placeholder="Phone Number">
-        <input class="bg-dark text-light"  type="password" id="registerPassword" placeholder="Password">
-        <button class="btnRose" onclick="register()">SEND</button>
+        <input class="bg-dark text-light text-light border-bottom border-secondary border-1 pb-3"  type="text" id="registerName" placeholder="Name">
+        <input class="bg-dark text-light text-light border-bottom border-secondary border-1 pb-3"  type="email" id="registerEmail" placeholder="Email">
+        <input class="bg-dark text-light text-light border-bottom border-secondary border-1 pb-3"  type="tel" id="registerPhone" placeholder="Phone Number">
+        <input class="bg-dark text-light text-light border-bottom border-secondary border-1 pb-3"  type="password" id="registerPassword" placeholder="Password">
+        <button class="roseB" onclick="register()">SEND</button>
     </div>
 </div>
 

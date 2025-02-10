@@ -131,12 +131,13 @@
     background-color: black
     color: $pink
 
-@media (max-width: 768px)
+@media (min-width: 576px) and (max-width:768px)
     .glaceMain img
         width: 200px
         height: auto
         margin-left: 20%
         margin-top: 25%
+
     .bordure
         background-color: $pink
         width: 80px
@@ -146,11 +147,32 @@
         margin-left: 4%
 
     .glaces3
-        grid-template-columns: repeat(2, 1fr)
+        grid-template-columns: repeat(1, 1fr)
         gap: 30px
-
-    .premierePhoto
         width: 100%
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5)
-        position: relative
-        z-index: 1
+
+    .grisSpec
+        height: 260px
+        width: 600px
+        img
+            margin-left: 8%
+
+    .gris
+        height: 260px
+        width: 600px
+        img
+            margin-left: 15%
+
+    .bordure2
+        margin-left: 61%
+
+    .rond
+        position: absolute
+        z-index: 2
+        bottom: 205px
+        left: 145px
+
+    h5
+        margin-left: 20% !important
+    button
+        margin-left: 23% !important

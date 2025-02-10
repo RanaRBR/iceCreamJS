@@ -11944,28 +11944,16 @@ ul a:hover {
   color: #ffbedd;
 }
 
-@media (max-width: 768px) {
-  .glaceBanner img {
-    height: 150px;
-    width: auto;
-    position: absolute;
-    bottom: 45%;
-    transition: top 25s;
-    transform: translateX(20%);
-    transform: translateY(30%);
-    animation: moveUpDown 5.5s infinite ease-in-out;
-    margin-bottom: 30%;
+@media (min-width: 576px) and (max-width: 768px) {
+  .banner {
+    flex-direction: row;
   }
-  @keyframes moveUpDown {
-    0% {
-      bottom: 0;
-    }
-    50% {
-      bottom: 45px;
-    }
-    100% {
-      bottom: 0;
-    }
+  .paragraphe, .glaceBanner {
+    width: 35%;
+  }
+  .glaceBanner img {
+    width: 250px;
+    height: auto;
   }
 }
 .about {
@@ -12123,7 +12111,7 @@ ul a:hover {
   color: #ffbedd;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .glaceMain img {
     width: 200px;
     height: auto;
@@ -12139,14 +12127,38 @@ ul a:hover {
     margin-left: 4%;
   }
   .glaces3 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
-  }
-  .premierePhoto {
     width: 100%;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    position: relative;
-    z-index: 1;
+  }
+  .grisSpec {
+    height: 260px;
+    width: 600px;
+  }
+  .grisSpec img {
+    margin-left: 8%;
+  }
+  .gris {
+    height: 260px;
+    width: 600px;
+  }
+  .gris img {
+    margin-left: 15%;
+  }
+  .bordure2 {
+    margin-left: 61%;
+  }
+  .rond {
+    position: absolute;
+    z-index: 2;
+    bottom: 205px;
+    left: 145px;
+  }
+  h5, .h5 {
+    margin-left: 20% !important;
+  }
+  button {
+    margin-left: 23% !important;
   }
 }
 .services {
@@ -12199,8 +12211,15 @@ ul a:hover {
 @media (max-width: 768px) {
   .grandeD {
     grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    margin-left: 35%;
+  }
+  .service1 {
+    margin: 0 center;
+    margin-right: 20%;
+  }
+  .carre1 {
+    height: 250px;
+    width: 450px;
+    padding-top: 8%;
   }
 }
 .modal {

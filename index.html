@@ -11,17 +11,32 @@
 </head>
 
 <body class="lightMode">
-    <header class="d-flex justify-content-between px-2 align-items-center">
-        <div class="w-25">
+    <header class="d-flex justify-content-between px-2 align-items-center bg-white fixed-top">
+        <div class="w-25 mx-5">
             <img src="./public/img/logo.png" alt="" class="h-100">
         </div>
-        <nav class="w-50 nav1">
-            <ul class="d-flex justify-content-evenly m-0 list-none p-0">
-                <li>Home</li>
-                <li>About</li>
-                <li>Icecream</li>
-                <li>Services</li>
-                <li>Blog</li>
+        <nav class="w-50 nav1 d-flex tousLi">
+            <ul class="d-flex justify-content-around m-0 list-none p-0 gap-5">
+                <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" href="#" id="home">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#about1">About</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#glacesF">Icecream</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#services1">Services</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <!-- <li id="home" href="#about1">Home</li>
+                <li href="#about1">About</li>
+                <li href="#glacesF">Ice Cream</li>
+                <li href="services1">Services</li>
+                <li>Blog</li> -->
             </ul>
         </nav>
        <div class="d-flex flex-column">
@@ -30,14 +45,14 @@
             <ul class="d-flex justify-content-evenly m-0 list-none p-0">
                 <li>Home</li>
                 <li>About</li>
-                <li>Icecream</li>
+                <li>Ice Cream</li>
                 <li>Services</li>
                 <li>Blog</li>
             </ul>
         </nav>
        </div>
-        <div class="w-25 d-flex justify-content-end">
-            <button><i class="bi bi-person-fill"></i></button>
+        <div class="icones w-25 d-flex justify-content-end mx-5 gap-5">
+            <button><span id="login">LOGIN</span><i class="bi bi-person-fill"></i></button>
             <button><i class="bi bi-moon-fill"></i></button>
         </div>
     </header>
@@ -94,13 +109,13 @@
             </div>
         </nav> -->
         <div class="banner w-100 d-flex justify-content-around">
-            <div class="w-25 paragraphe ">
+            <div class="w-50 paragraphe ">
                 <h1 class="fw-bolder fs-1 mb-4">Ice <br> Cream</h1>
                 <p class="">It is a long established fact that a reader will be <br> distracted by the readable
                     content of a page when <br> looking at its layout. The point of using Lorem.</p>
                 <button class="order fs-6 mt-5 ">Order Now</button>
             </div>
-            <div class="glaceBanner"><img src="./public/img/banner-img.png" alt="" id="movingImage"></div>
+            <div class="glaceBanner w-50"><img src="./public/img/banner-img.png" alt="" id="movingImage"></div>
         </div>
     </section>
     <main>

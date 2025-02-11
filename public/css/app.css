@@ -11859,6 +11859,7 @@ nav {
   height: 100px !important;
   border-bottom: 2px solid #ffbedd !important;
   margin-bottom: 4% !important;
+  position: relative;
 }
 
 ul {
@@ -11893,6 +11894,11 @@ ul a:hover {
   background: none;
 }
 
+@media (min-width: 576px) and (max-width: 768px) {
+  .navbar .logoimg {
+    margin: 30px !important;
+  }
+}
 .banner {
   margin-top: 8%;
   display: flex;
@@ -11952,13 +11958,12 @@ ul a:hover {
 @media (min-width: 576px) and (max-width: 768px) {
   .banner {
     flex-direction: row;
-  }
-  .paragraphe, .glaceBanner {
-    width: 35%;
+    margin-top: 30%;
   }
   .glaceBanner img {
     width: 220px;
     height: auto;
+    margin-top: 20%;
   }
 }
 .about {
@@ -12175,6 +12180,10 @@ ul a:hover {
   .see {
     margin-left: 40% !important;
   }
+  .titre {
+    margin-left: 10%;
+    margin-bottom: 0 !important;
+  }
 }
 .services {
   margin-top: 5%;
@@ -12322,12 +12331,14 @@ ul a:hover {
     width: 100% !important;
   }
   .modal .modal-content {
-    width: 50% !important;
-    height: 90% !important;
+    width: 60% !important;
+    height: 100% !important;
   }
   .modal .modal-content button {
-    height: 60px !important;
-    width: 180px;
+    height: 80px !important;
+    width: 240px;
+    margin: 0 auto !important;
+    padding: 5%;
   }
 }
 .temoinT {
@@ -12688,13 +12699,35 @@ footer {
 
 .burger {
   display: none;
-  position: relative;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
   padding: 0;
   width: 45px;
   height: 45px;
   border: none;
   background: transparent;
   cursor: pointer;
+}
+
+.icones {
+  position: absolute;
+  right: 60px;
+  gap: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  justify-content: space-around;
+}
+
+.textL {
+  display: flex;
+  justify-content: center;
+  gap: 15px !important;
+}
+
+#login {
+  margin-top: 5% !important;
 }
 
 .bar {
@@ -12725,16 +12758,26 @@ footer {
   transform: translateY(12px);
 }
 
-/* Affiche le bouton burger en mode mobile */
 @media (min-width: 576px) and (max-width: 768px) {
   .navbar {
     width: 100%;
   }
   .burger {
     display: block;
+    margin: 0 !important;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
   }
   .burger button {
     align-items: flex-end !important;
+    display: none;
   }
   .navbar-links {
     width: 100%;
@@ -12750,10 +12793,12 @@ footer {
     background: #696868;
     transform: translateX(120%);
     transition: all 1.5s ease-in-out;
+    visibility: hidden;
   }
   .show-nav .navbar-links {
     width: 100vw;
     transform: translateX(0);
+    visibility: visible;
   }
   .navbar-link {
     transform: translateX(90%);
@@ -12762,7 +12807,6 @@ footer {
   .icones {
     display: flex;
     justify-content: space-around !important;
-    gap: 5px !important;
     margin: 0 !important;
   }
   .show-nav .navbar-link {

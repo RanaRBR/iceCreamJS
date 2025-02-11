@@ -1,7 +1,10 @@
 
 .burger
     display: none
-    position: relative
+    position: absolute
+    right: 30px
+    top: 50%
+    transform: translateY(-50%)
     padding: 0
     width: 45px
     height: 45px
@@ -9,6 +12,22 @@
     background: transparent
     cursor: pointer
 
+.icones
+    position: absolute
+    right: 60px
+    gap: 0 !important
+    margin: 0 !important
+    display: flex
+    justify-content: space-around
+
+
+.textL
+    display: flex
+    justify-content: center
+    gap: 15px !important
+
+#login
+    margin-top: 5%  !important
 .bar
     display: block
     width: 45px
@@ -33,15 +52,29 @@
 .bar::after
     transform: translateY(12px)
 
-/* Affiche le bouton burger en mode mobile */
 @media (min-width: 576px) and (max-width:768px)
+
     .navbar
         width: 100%
+
     .burger
         display: block
+        margin: 0 !important
+        right: 30px
+        top: 50%
+        transform: translateY(-50%)
+        padding: 0
+        width: 35px 
+        height: 35px
+        border: none
+        background: transparent
+        cursor: pointer
 
     .burger button
         align-items: flex-end !important
+        display: none
+    
+
 
     .navbar-links
         width: 100%
@@ -57,10 +90,12 @@
         background: #696868
         transform: translateX(120%)
         transition: all 1.5s ease-in-out
+        visibility: hidden
 
     .show-nav .navbar-links
         width: 100vw
         transform: translateX(0)
+        visibility: visible
 
     .navbar-link
         transform: translateX(90%)
@@ -69,8 +104,8 @@
     .icones
         display: flex
         justify-content: space-around !important
-        gap: 5px !important
         margin: 0 !important
+
 
     .show-nav .navbar-link
         transform: translateX(0)
@@ -85,5 +120,3 @@
     .navbar-link > a:hover
         padding-left: 2rem
         letter-spacing: 5px
-
-   

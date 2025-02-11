@@ -11971,16 +11971,12 @@ ul a:hover {
     justify-content: center !important;
     flex-direction: column-reverse;
     text-align: center;
-    margin-top: 50%;
     width: 100vw !important;
     margin-left: 50%;
-    font-size: 2rem !important;
+    margin-top: 2% !important;
   }
   .banner h1, .banner .h1 {
-    font-size: 3rem !important;
-  }
-  .banner p {
-    width: 100%;
+    font-size: 2rem !important;
   }
   .paragraphe {
     width: 100% !important;
@@ -12047,6 +12043,9 @@ ul a:hover {
 
 .forfait {
   padding-inline: 8vw;
+}
+.forfait h1, .forfait .h1 {
+  font-size: 1.5rem !important;
 }
 
 .glaces3 {
@@ -12164,6 +12163,10 @@ ul a:hover {
   .premierePhoto {
     width: 80%;
   }
+  .glaces3 {
+    display: flex;
+    justify-content: center;
+  }
 }
 #services1 {
   padding-inline: 8vw;
@@ -12218,6 +12221,11 @@ ul a:hover {
   }
   .carre1 {
     width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .services h1, .services .h1 {
+    font-size: 1.5rem !important;
   }
 }
 .modal {
@@ -12307,6 +12315,11 @@ ul a:hover {
     width: 220px;
     margin: 0 auto !important;
     padding: 5%;
+  }
+}
+@media (max-width: 576px) {
+  .modal-content {
+    width: 100% !important;
   }
 }
 .temoinT {
@@ -12424,6 +12437,12 @@ ul a:hover {
   }
   .slide img ul {
     margin: 0;
+  }
+}
+@media (max-width: 576px) {
+  .carouElement img {
+    height: 100px !important;
+    width: 100px !important;
   }
 }
 footer {

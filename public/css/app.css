@@ -11856,15 +11856,9 @@ body {
 }
 
 nav {
-  border-bottom: 1px solid pink;
   height: 100px !important;
   border-bottom: 2px solid #ffbedd !important;
-  margin-left: 2% !important;
   margin-bottom: 4% !important;
-}
-
-.navbar-links {
-  margin-left: 5%;
 }
 
 ul {
@@ -11899,11 +11893,6 @@ ul a:hover {
   background: none;
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
-  header {
-    width: 100%;
-  }
-}
 .banner {
   margin-top: 8%;
   display: flex;
@@ -11997,7 +11986,6 @@ ul a:hover {
 }
 
 .titre {
-  margin-left: 15%;
   margin-top: 8%;
 }
 
@@ -12189,7 +12177,6 @@ ul a:hover {
   }
 }
 .services {
-  margin-left: 15%;
   margin-top: 5%;
 }
 
@@ -12628,7 +12615,7 @@ footer {
 .darkMode {
   background-color: #150404 !important;
   color: white !important;
-  transition: 0.5s;
+  transition: 1.5s;
 }
 .darkMode header {
   width: 100% !important;
@@ -12699,7 +12686,6 @@ footer {
   display: none;
 }
 
-/* Styles pour le bouton burger */
 .burger {
   display: none;
   position: relative;
@@ -12740,9 +12726,9 @@ footer {
 }
 
 /* Affiche le bouton burger en mode mobile */
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .navbar {
-    width: 80%;
+    width: 100%;
   }
   .burger {
     display: block;
@@ -12751,15 +12737,17 @@ footer {
     align-items: flex-end !important;
   }
   .navbar-links {
+    width: 100%;
     overflow: hidden;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     width: 0;
-    height: calc(30vh - 65px);
+    height: 80px;
     position: absolute;
-    top: 65px;
-    right: -95px;
-    background: #474545;
+    top: 100px;
+    left: 0;
+    background: #696868;
     transform: translateX(120%);
     transition: all 1.5s ease-in-out;
   }
@@ -12768,8 +12756,14 @@ footer {
     transform: translateX(0);
   }
   .navbar-link {
-    transform: translateX(101%);
+    transform: translateX(90%);
     transition: all 0.5s ease-in-out;
+  }
+  .icones {
+    display: flex;
+    justify-content: space-around !important;
+    gap: 5px !important;
+    margin: 0 !important;
   }
   .show-nav .navbar-link {
     transform: translateX(0);

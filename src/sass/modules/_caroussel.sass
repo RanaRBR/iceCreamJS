@@ -1,48 +1,50 @@
 .temoinT
     margin-left: 45%
     margin-top: 5%
+    h1
+        font-size: 3rem !important
 
 .carousselEntier
     position: relative
-    max-width: 600px
+    max-width: 60%
     margin: auto
     padding: 10px
+    margin-bottom: 10%
 
 .texteCar
     height: 250px
-    width: 700px
+    width: 100%
     background-color: #fffefe
-    margin-top: 10%
-    padding-top: 15%
-    padding: 10%
+    padding: 5%
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9)
+
+.carouElement
+    position: absolute
+    bottom: 0
+    width: 100%
 
 .slides
     display: flex
     overflow: hidden
+    width: 100%
 
 .slide
     display: none
     width: 100%
-    text-align: center
+    justify-content: center !important
 
 .slide.active
-    display: block
+    display: flex
 
 .slide img
-    width: 200px
-    height: 200px
-    margin-top: 20px
-    position: relative
-    bottom: 80px
-    left: 25px
+    width: 150px
+    height: 150px
+    position: absolute
+    bottom: -75px
     object-fit: cover
 
 .btnC
     position: absolute
-    top: 40%
-    transform: translateY(-50%)
-    color: white
     color: white
     height: 40px
     width: 40px
@@ -50,9 +52,10 @@
     border: none
     padding: 20px
     cursor: pointer
+    top: 45%
 
 #previous
-    left: -15px
+    left: -10px
     padding: 5px
 
 #previous:hover
@@ -60,7 +63,7 @@
     color: $pink
 
 #next
-    right: -135px
+    right: -10px
     padding: 5px
 
 #next:hover
@@ -87,7 +90,6 @@
         width: 80% !important
         margin-left: 15%
 
-
     #next
         right: 5px
 
@@ -105,5 +107,5 @@
     .slide img
         left: 105px
         top: -65px
-        ul 
+        ul
             margin: 0

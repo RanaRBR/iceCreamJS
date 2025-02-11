@@ -5,10 +5,14 @@
     margin-top: 10% !important
     margin-right: 2%
 
-.glaceMain img
-    width: 400px
-    height: auto
-    margin-left: 20%
+.glaceMain 
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+        width: 60%
+        height: auto
+        margin-left: 20%
 
 .bordure
     background-color: $pink
@@ -20,26 +24,34 @@
 
 .titre
     margin-top: 8%
+    margin-left: 8%
+    h1
+        font-size: 3rem !important
 
+.titleForfait
+    display: flex
+    align-items: flex-end
+    gap: 5%
 
 .bordure2
     background-color: $pink
     width: 80px
     height: 5px
     border-radius: 15px
-    margin-left: 31%
-    margin-top: -4.2%
+
+
+.forfait
+    padding-inline: 8vw
 
 .glaces3
-    display: grid
-    grid-template-columns: repeat(3, 350px)
-    grid-template-rows: repeat(2, auto)
-    gap: 50px
-    justify-content: center
-    margin: 30px
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    // margin: 30px
 
 .premierePhoto
-    width: 100%
+    width: 30%
     margin-top: 5%
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5)
     position: relative
@@ -47,27 +59,23 @@
 
 .grisSpec
     height: 260px
-    width: 350px
+    width: 100%
     background-color: #f0f0f4
     cursor: pointer
     transition: background-color 0.3s
-    img
-        padding: 5%
-        padding-left: 35%
+    display: flex
+    justify-content: center
+    align-items: center
 
 .gris
     height: 260px
-    width: 350px
+    width: 100%
     background-color: #f0f0f4
-    padding-left: 30%
     cursor: pointer
     transition: background-color 0.3s
-    img
-        padding: 1%
-        padding-left: -12%
-        position: relative
-        top: 35px
-        right: 35px
+    display: flex
+    justify-content: center
+    align-items: center
 
 #fraise
     position: relative
@@ -75,34 +83,30 @@
     right: 35px
 
 .texte
-    display: block !important
+    display: flex !important
+    flex-direction: column
     justify-content: center !important
     align-items: center !important
-    margin-left: 10%
-    margin-bottom: 5%
-    margin-top: 5%
     text-align: center
-    padding: 5% !important
-    span
-        margin-left: 20%
-    h5
-        margin-right: 23%
-        padding-bottom: 5%
-        padding-top: 5%
-    button
-        margin-right: 23%
+    height: 180px
+    position: relative
 
-.rond
-    background-color: #e5e5ed
-    border-radius: 50%
-    height: 85px !important
-    width: 85px !important
-    padding: 5%
+#seul
+    width: 100%
+    display: flex
+    justify-content: center
     position: absolute
-    z-index: 2
-    bottom: 150px
-    left: 50px
-    font-style: 1.5rem
+    top: -42.5px
+    .rond
+        background-color: #e5e5ed
+        border-radius: 50%
+        height: 85px !important
+        width: 85px !important
+        z-index: 2
+        font-style: 1.5rem
+        display: flex
+        justify-content: center
+        align-items: center
 
 .add
     border: 1px solid $pinkButton
@@ -116,82 +120,27 @@
     background-color: black
     color: $pink
 
-.see
-    background-color: $pinkButton
-    width: 180px
-    height: 40px
-    border: none
-    border-radius: 5px
-    color: white
-    margin-left: 45%
-    margin-bottom: 5%
+.seeParent
+    display: flex
+    justify-content: center
+    margin-top: 5%
+    .see
+        background-color: $pinkButton
+        width: 180px
+        height: 40px
+        border: none
+        border-radius: 5px
+        color: white
+        margin: 0 auto
 
 .see:hover
     background-color: black
     color: $pink
 
-@media (min-width: 576px) and (max-width:768px)
-    .forfait
-        gap: 10px !important
-        margin-top: 0
-        margin: 0 auto !important
-
+@media (min-width: 600px) and (max-width: 1024px)
     .premierePhoto
-        width: 400px
+        width: 45%
 
-    .glaceMain img
-        width: 200px
-        height: auto
-        margin-left: 20%
-        margin-top: 25%
-
-    .bordure
-        background-color: $pink
-        width: 80px
-        height: 5px
-        border-radius: 15px
-        margin-top: 6%
-        margin-left: 4%
-
-    .glaces3
-        grid-template-columns: repeat(1, 1fr)
-        gap: 30px
-        margin-left: 20% !important
-
-    .grisSpec
-        height: 260px
-        width: 400px
-        img
-            margin-left: 8%
-
-    .gris
-        height: 260px
-        width: 400px
-        img
-            margin-left: 3%
-            margin-top: 2%
-
-    .bordure2
-        margin-left: 61%
-
-    .rond
-        position: absolute
-        z-index: 2
-        bottom: 160px
-        left: 80px
-
-    h5
-        margin-left: 10% !important
-    button
-        margin-left: 13% !important
-    .see
-        margin-left: 40% !important
-
-    .titre
-        margin-left: 10%
-        margin-bottom: 0 !important
-        width: 600px !important
-
-
-
- 
+@media (max-width:426px)
+    .premierePhoto
+        width: 80%

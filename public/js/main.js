@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 function toggleMenu() {
-    const navbar = document.querySelector('.navbar');
+    const navbar = document.querySelector('.navB');
     const burger = document.querySelector('.burger');
 
     // Écouteur d'événements pour le bouton burger
@@ -203,7 +203,7 @@ function toggleMenu() {
     });
 
     // Bonus : Ferme le menu lorsque l'on clique sur un lien
-    const navbarLinks = document.querySelectorAll('.navbar a');
+    const navbarLinks = document.querySelectorAll('.navB a');
     navbarLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             navbar.classList.remove('show-nav'); // Enlève la classe show-nav

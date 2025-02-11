@@ -1,42 +1,44 @@
 .banner
-    margin-top: 8%
-    display: flex
     justify-content: center
-    align-items: center
-    margin-bottom: 15%
+    // align-items: center
+    padding: 10% 10%
+    
+
 
 .paragraphe
-    width: 60%
-    margin-left: 20% !important
-    margin-top: 10%
+    width: 40%
+
+    h1
+        font-size: 3rem !important
+
 
 .glaceBanner
-    width: 40%
-    overflow: hidden
-    margin-right: 10% !important
+    animation: icecreamMoving 3s infinite
 
+@keyframes icecreamMoving 
+    0% 
+        transform: translateY(0)
+    50% 
+        transform: translateY(-50px)
+
+
+ 
+.glaceBanner
+    width: 60%
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 5% 0
+    // margin-right: 10% !important
 
 .glaceBanner img
-    height: 250px
+    height: 280px
     width: auto
-    position: absolute
-    // bottom: 15%
     transition: top 25s
     transform: translateX(20%)
     transform: translateY(30%)
     animation: moveUpDown 5.5s infinite ease-in-out
-    margin-bottom: 13%
-    
-
-@keyframes moveUpDown
-    0%
-        bottom: 0
-
-    50%
-        bottom: 55px
-
-    100%
-        bottom: 0
 
 .order
     background-color: $pinkButton
@@ -51,7 +53,7 @@
     color: $pink
 
 @media (min-width: 576px) and (max-width:768px)
-    .banner 
+    .banner
         flex-direction: row
         margin-top: 30%
 
@@ -60,6 +62,29 @@
         height: auto
         margin-top: 20%
 
+@media (max-width: 576px)
+    .banner
+        display: block
+        justify-content: center !important
+        flex-direction: column-reverse
+        text-align: center
+        margin-top: 50%
+        width: 100vw !important
+        margin-left: 50%
+        font-size: 2rem !important
+        h1
+            font-size: 3rem !important
+        p
+            width: 100%
 
+    .paragraphe
+        width: 100% !important
 
-
+    .glaceBanner img
+        width: 320px !important
+        height: auto
+        margin-top: 20%
+        animation: none
+        position: none
+        top: 0
+        bottom: 0

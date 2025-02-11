@@ -11,7 +11,8 @@
 </head>
 
 <body class="lightMode">
-    <nav class="navbar dark-mode d-flex justify-content-between px-2 align-items-center bg-white fixed-top" role="navigation">
+    <nav class="navB dark-mode d-flex justify-content-between px-2 align-items-center bg-white fixed-top"
+        role="navigation">
         <div class="w-25 mx-5 logoimg">
             <img src="./public/img/logo.png" alt="" class="h-100">
         </div>
@@ -34,43 +35,47 @@
         </ul>
         <div class="icones w-25 d-flex justify-content-center mx-5 gap-5">
             <button type="button" class="pink border-0 bg-white text-black fw-semibold textL" id="login">Login<span
-                    class="fs-5 bi bi-person-fill"></span></button>
+                    class="fs-5 bi bi-person-fill mb-2"></span></button>
             <button type="button" class="bg-white text-black fw-semibold " id="boutonDark"><i
-                    class="fs-5 bi bi-moon"></i></button>
+                    class="fs-5 bi bi-moon mt-3"></i></button>
             <button type="button" class="bg-white text-black fw-semibold " style="display: none;" id="boutonLight"><i
-                    class="fs-3 bi bi-brightness-low mx-5"></i>
+                    class="fs-3 bi bi-brightness-low mt-3"></i>
             </button>
-            
+
         </div>
         <button class="burger">
             <span class="bar"></span>
         </button>
-        
+
     </nav>
 
 
-    <section>
-
-        <div class="banner w-100 d-flex justify-content-around">
-            <div class="w-50 paragraphe ">
-                <h1 class="fw-bolder fs-1 mb-4">Ice <br> Cream</h1>
-                <p class="">It is a long established fact that a reader will be <br> distracted by the readable
+    <section id="baita" class="pb-5">
+        <div
+            class="banner d-flex gap-5 justify-content-between align-items-center m-0 flex-md-row flex-column-reverse align-items-lg-center mt-5 mt-lg-0">
+            <div class="paragraphe ">
+                <h1 class="fw-bolder fs-1 text-center text-lg-start">Ice <br> Cream</h1>
+                <p class="text-center text-lg-start">It is a long established fact that a reader will be <br>distracted
+                    by the readable
                     content of a page when <br> looking at its layout. The point of using Lorem.</p>
-                <button class="order fs-6 mt-5 ">Order Now</button>
+                <button class="order fs-6">Order Now</button>
             </div>
-            <div class="glaceBanner w-50"><img src="./public/img/banner-img.png" alt="" id="movingImage"></div>
+            <div class="glaceBanner w-50 d-none d-md-flex"><img src="./public/img/banner-img.png" alt=""
+                    id="movingImage"></div>
         </div>
     </section>
+
     <main>
         <section id="about1">
-            <div class="about w-100 d-flex justify-content-between">
-                <div class="glaceMain w-50"><img src="./public/img/about-img.png" alt=""></div>
+            <div
+                class="about w-100 d-flex flex-md-row flex-column justify-content-md-between align-items-center align-items-lg-start">
+                <div class="glaceMain w-50"><img src="./public/img/about-img.png" alt="" class="m-0"></div>
                 <div class="resp w-50 ">
                     <div class="aboutPara d-flex">
                         <h1 class="fw-bolder fs-1 mb-4">About Ice cream</h1>
                         <div class="bordure"></div>
                     </div>
-                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, reprehenderit.<br> Lorem
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, reprehenderit.<br> Lorem
                         ipsum dolor sit amet consectetur adipisicing elit. Sit, iste. <br> Lorem ipsum dolor sit amet.
                     </p>
                     <button class="order fs-6 mt-5">Read More</button>
@@ -79,13 +84,15 @@
         </section>
 
         <section id="glacesF" class="mt-5">
-            <div class="titre w-100 mb-5">
-                <h1 class=" fw-bolder fs-1 mb-5">Our featured Ice Cream</h1>
-                <div class="bordure2"></div>
-                <p class="mb-5 mt-5">Lorem ipsum dolor sit amet.</p>
-            </div>
             <div class="forfait w-100 mt-5">
-                <div class="glaces3 d-grid gap-4 gap-lg-5">
+                <div class="titre w-100 ms-0">
+                    <div class="d-flex titleForfait">
+                        <h1 class=" fw-bolder fs-1 m-0">Our featured Ice Cream</h1>
+                    <div class="bordure2"></div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="glaces3 gap-4 gap-lg-5">
                     <div class="premierePhoto ">
                         <div class="gris"><img src="./public/img/img-1.png" alt=""></div>
                         <div class="glace1 ">
@@ -169,7 +176,9 @@
             </div>
         </section>
         </div>
-        <button class="see">See More</button>
+        <div class="seeParent">
+            <button class="see">See More</button>
+        </div>
         </section>
 
         <section id="services1">
@@ -179,9 +188,9 @@
                 <p class="mt-4">Lorem ipsum dolor sit amet.</p>
             </div>
 
-            <div class="grandeD w-75 d-grid grid-template-columns mt-5">
+            <div class="grandeD mt-5">
                 <div class="carre1">
-                    <div class="title d-flex gap-5">
+                    <div class="title d-flex gap-3">
                         <img src="./public/img/icon-1.png" alt="">
                         <h6>Cookies Ice Cream</h6>
                     </div>
@@ -189,7 +198,7 @@
                     </p>
                 </div>
                 <div class="carre1">
-                    <div class="title d-flex gap-5">
+                    <div class="title d-flex gap-3">
                         <img src="./public/img/icon-2.png" alt="">
                         <h6>Cookies Ice Cream</h6>
                     </div>
@@ -197,7 +206,7 @@
                     </p>
                 </div>
                 <div class="carre1">
-                    <div class="title d-flex gap-5">
+                    <div class="title d-flex gap-3">
                         <img src="./public/img/icon-1.png" alt="">
                         <h6>Cookies Ice Cream</h6>
                     </div>
@@ -205,8 +214,9 @@
                     </p>
                 </div>
             </div>
-
-            <button class="read">Read More</button>
+            <div class="d-flex justify-content-center mt-5">
+                <button class="read">Read More</button>
+            </div>
         </section>
 
         <section>
@@ -218,13 +228,13 @@
 
                     <div class="texteCar text-center">
                     </div>
-
                     <button class="btnC" id="previous">
                         &#10096;
                     </button> <button class="btnC" id="next">
                         &#10097;
                     </button>
-                    <ul>
+
+                    <ul class="carouElement m-0 p-0">
                         <li class="slide"><img src="./public/img/client-img.png" alt="image caroussel"></li>
                         <li class="slide"><img src="./public/img/pexels-olly-774909.jpg" alt="image caroussel"></li>
                         <li class="slide"><img src="./public/img/pexels-tarzine-jackson-254126-773371.jpg"

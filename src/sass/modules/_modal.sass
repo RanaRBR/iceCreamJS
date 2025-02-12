@@ -1,5 +1,5 @@
 
-.modal 
+.modal
     display: none
     position: fixed
     z-index: 1
@@ -11,7 +11,6 @@
     justify-content: center
     align-items: center
 
-
 .modal button
     background-color: $pinkButton
     width: 320px
@@ -19,12 +18,11 @@
     border: none !important
     color: white
 
-.modal button:hover 
+.modal button:hover
     background-color: #ffffff
     color: black
 
-
-.modal-content 
+.modal-content
     background-color: white
     padding: 50px
     width: 550px
@@ -33,19 +31,18 @@
     text-align: center
     gap: 20px
 
-.modal  
-    input 
-        border: none 
-        background-color: transparent 
-        color: inherit 
-        padding: 10px 
+.modal
+    input
+        border: none
+        background-color: transparent
+        color: inherit
+        padding: 10px
         width: 100%
 
 .roseB
     margin-top: 15% !important
- 
 
-.close 
+.close
     position: absolute
     top: 25px
     bottom: 20px
@@ -60,7 +57,6 @@
     display: flex
     align-items: center
     justify-content: center
-
 
 .lien
     color: gray
@@ -80,8 +76,15 @@
                 width: 220px
                 margin: 0 auto !important
                 padding: 5%
- 
-@media (max-width: 576px)
-    .modal-content
-        width: 100% !important
 
+@media (max-width: 576px)
+    .modal
+        width: 100% !important
+        .modal-content
+            width: 60% !important
+            height: 100% !important
+            button
+                height: 55px !important
+                width: 220px
+                margin: 0 auto !important
+                padding: 5%
